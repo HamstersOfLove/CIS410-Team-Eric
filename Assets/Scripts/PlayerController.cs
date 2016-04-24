@@ -4,8 +4,10 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
-	public float speed;
+	public float PlayerSpeed;
+	public Vector2 jumpHeight;
 
+	private Transform button;
 	private Animator animator;
 	private Rigidbody2D rb;
 
@@ -23,10 +25,11 @@ public class PlayerController : MonoBehaviour
 		var horizontal = Input.GetAxis("Horizontal");
 		var vertical = Input.GetAxis ("Vertical");
 
-		Vector2 movement = new Vector2 (horizontal, vertical);
+		Vector2 movement = new Vector2 (horizontal, 0);
 
-		rb.AddForce (movement * speed);
+		rb.AddForce (movement * PlayerSpeed);
 
+		//Player Movement
 		if (horizontal > 0)
 		{
 			animator.SetInteger("Direction", 0);
@@ -36,5 +39,16 @@ public class PlayerController : MonoBehaviour
 		{
 			animator.SetInteger("Direction", 1);
 		}
+			
+		//Player Jump Script
+		if (Input.GetMouseButtonDown (0) || Input.GetKeyDown (KeyCode.Space)) {  
+			//button.GetComponent<Button> ().interactable = false;	
+			rb.AddForce (jumpHeight, ForceMode2D.Impulse);
+		}
+
+
 	}
+
+
+
 }
