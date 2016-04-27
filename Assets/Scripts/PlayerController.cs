@@ -6,8 +6,6 @@ public class PlayerController : MonoBehaviour
 {
 	public float playerSpeed;
 	public Vector2 jumpHeight;
-
-	private Transform button;
 	private Animator animator;
 	private Rigidbody2D rb;
 
@@ -63,9 +61,14 @@ public class PlayerController : MonoBehaviour
 		if (col.gameObject.tag == "Ground") {
 			isJumping = false;
 		}
+
+		if (col.gameObject.tag == "Enemy") {
+			animator.SetInteger ("Direction", 2);
+
+			//animator.speed = 0;
+			Destroy (this);
+		}
 	
 	}
-
-
 
 }
