@@ -10,14 +10,16 @@ public class PlayerController : MonoBehaviour
 	private Transform button;
 	private Animator animator;
 	private Rigidbody2D rb;
-	private bool isGrounded = false;
+
+
+	private bool isJumping = false;
 
 	// Use this for initialization
 	void Start()
 	{
 		rb = GetComponent<Rigidbody2D> ();
 		animator = this.GetComponent<Animator>();
-		isGrounded = true;
+
 	}
 
 	// Update is called once per frame
@@ -25,6 +27,9 @@ public class PlayerController : MonoBehaviour
 	{
 		//Player Movement
 		//Left/Right
+
+
+
 		if (Input.GetKey (KeyCode.RightArrow)) {
 			transform.Translate(Vector2.right * playerSpeed);
 
@@ -44,26 +49,23 @@ public class PlayerController : MonoBehaviour
 		} 
 
 		//Jump
-		if (Input.GetKeyDown (KeyCode.Space)) {  
-			if(isGrounded){
+		if (Input.GetKeyDown (KeyCode.Space)) {
+			if (isJumping == false) {
 				rb.AddForce (jumpHeight, ForceMode2D.Impulse);
+				isJumping = true;
 			}
-		}
-			
 
+		}
+	
 	}
 
-	// Possible solution to multiple jumps in air... Not working currently.
-	void OnTriggerEnter(Collider other){
-		if (other.gameObject.CompareTag ("Ground")) {
-			isGrounded = true;
+	void OnCollisionEnter2D(Collision2D col){
+		if (col.gameObject.tag == "Ground") {
+			isJumping = false;
 		}
+	
 	}
 
-	void OnTriggerExit(Collider other){
-		if (other.CompareTag ("Ground")) {
-			isGrounded = false;
-		}
-	}
+
 
 }
