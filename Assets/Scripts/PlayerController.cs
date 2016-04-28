@@ -4,12 +4,12 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
-	public float playerSpeed;
+	
 	public Vector2 jumpHeight;
 	private Animator animator;
 	private Rigidbody2D rb;
 
-
+	private float playerSpeed = 0.1f;
 	private bool isJumping = false;
 
 	// Use this for initialization
@@ -68,7 +68,21 @@ public class PlayerController : MonoBehaviour
 			//animator.speed = 0;
 			Destroy (this);
 		}
+
+		// Tests for collision with Coffee tagged objects
+		if (col.gameObject.tag == "Coffee") {
+			col.gameObject.SetActive (false);
+
+			StartCoroutine(SpeedUp ());
+		}
 	
+	}
+
+	// Gives player a 5 second speed boost
+	IEnumerator SpeedUp() {
+		playerSpeed = 0.2f;
+		yield return new WaitForSeconds(5.0f);
+		playerSpeed = 0.1f;
 	}
 
 }
