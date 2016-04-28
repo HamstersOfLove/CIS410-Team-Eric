@@ -1,0 +1,2570 @@
+fileFormatVersion: 2
+guid: 8d17efc87ba0c4145bc5e6fd0d523777
+timeCreated: 1461814843
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: female_flyers_0
+    21300002: female_flyers_1
+    21300004: female_flyers_2
+    21300006: female_flyers_3
+    21300008: female_flyers_4
+    21300010: female_flyers_5
+    21300012: female_flyers_6
+    21300014: female_flyers_7
+    21300016: female_flyers_8
+    21300018: female_flyers_9
+    21300020: female_flyers_10
+    21300022: female_flyers_11
+    21300024: female_flyers_12
+    21300026: female_flyers_13
+    21300028: female_flyers_14
+    21300030: female_flyers_15
+    21300032: female_flyers_16
+    21300034: female_flyers_17
+    21300036: female_flyers_18
+    21300038: female_flyers_19
+    21300040: female_flyers_20
+    21300042: female_flyers_21
+    21300044: female_flyers_22
+    21300046: female_flyers_23
+    21300048: female_flyers_24
+    21300050: female_flyers_25
+    21300052: female_flyers_26
+    21300054: female_flyers_27
+    21300056: female_flyers_28
+    21300058: female_flyers_29
+    21300060: female_flyers_30
+    21300062: female_flyers_31
+    21300064: female_flyers_32
+    21300066: female_flyers_33
+    21300068: female_flyers_34
+    21300070: female_flyers_35
+    21300072: female_flyers_36
+    21300074: female_flyers_37
+    21300076: female_flyers_38
+    21300078: female_flyers_39
+    21300080: female_flyers_40
+    21300082: female_flyers_41
+    21300084: female_flyers_42
+    21300086: female_flyers_43
+    21300088: female_flyers_44
+    21300090: female_flyers_45
+    21300092: female_flyers_46
+    21300094: female_flyers_47
+    21300096: female_flyers_48
+    21300098: female_flyers_49
+    21300100: female_flyers_50
+    21300102: female_flyers_51
+    21300104: female_flyers_52
+    21300106: female_flyers_53
+    21300108: female_flyers_54
+    21300110: female_flyers_55
+    21300112: female_flyers_56
+    21300114: female_flyers_57
+    21300116: female_flyers_58
+    21300118: female_flyers_59
+    21300120: female_flyers_60
+    21300122: female_flyers_61
+    21300124: female_flyers_62
+    21300126: female_flyers_63
+    21300128: female_flyers_64
+    21300130: female_flyers_65
+    21300132: female_flyers_66
+    21300134: female_flyers_67
+    21300136: female_flyers_68
+    21300138: female_flyers_69
+    21300140: female_flyers_70
+    21300142: female_flyers_71
+    21300144: female_flyers_72
+    21300146: female_flyers_73
+    21300148: female_flyers_74
+    21300150: female_flyers_75
+    21300152: female_flyers_76
+    21300154: female_flyers_77
+    21300156: female_flyers_78
+    21300158: female_flyers_79
+    21300160: female_flyers_80
+    21300162: female_flyers_81
+    21300164: female_flyers_82
+    21300166: female_flyers_83
+    21300168: female_flyers_84
+    21300170: female_flyers_85
+    21300172: female_flyers_86
+    21300174: female_flyers_87
+    21300176: female_flyers_88
+    21300178: female_flyers_89
+    21300180: female_flyers_90
+    21300182: female_flyers_91
+    21300184: female_flyers_92
+    21300186: female_flyers_93
+    21300188: female_flyers_94
+    21300190: female_flyers_95
+    21300192: female_flyers_96
+    21300194: female_flyers_97
+    21300196: female_flyers_98
+    21300198: female_flyers_99
+    21300200: female_flyers_100
+    21300202: female_flyers_101
+    21300204: female_flyers_102
+    21300206: female_flyers_103
+    21300208: female_flyers_104
+    21300210: female_flyers_105
+    21300212: female_flyers_106
+    21300214: female_flyers_107
+    21300216: female_flyers_108
+    21300218: female_flyers_109
+    21300220: female_flyers_110
+    21300222: female_flyers_111
+    21300224: female_flyers_112
+    21300226: female_flyers_113
+    21300228: female_flyers_114
+    21300230: female_flyers_115
+    21300232: female_flyers_116
+    21300234: female_flyers_117
+    21300236: female_flyers_118
+    21300238: female_flyers_119
+    21300240: female_flyers_120
+    21300242: female_flyers_121
+    21300244: female_flyers_122
+    21300246: female_flyers_123
+    21300248: female_flyers_124
+    21300250: female_flyers_125
+    21300252: female_flyers_126
+    21300254: female_flyers_127
+    21300256: female_flyers_128
+    21300258: female_flyers_129
+    21300260: female_flyers_130
+    21300262: female_flyers_131
+    21300264: female_flyers_132
+    21300266: female_flyers_133
+    21300268: female_flyers_134
+    21300270: female_flyers_135
+    21300272: female_flyers_136
+    21300274: female_flyers_137
+    21300276: female_flyers_138
+    21300278: female_flyers_139
+    21300280: female_flyers_140
+    21300282: female_flyers_141
+    21300284: female_flyers_142
+    21300286: female_flyers_143
+    21300288: female_flyers_144
+    21300290: female_flyers_145
+    21300292: female_flyers_146
+    21300294: female_flyers_147
+    21300296: female_flyers_148
+    21300298: female_flyers_149
+    21300300: female_flyers_150
+    21300302: female_flyers_151
+    21300304: female_flyers_152
+    21300306: female_flyers_153
+    21300308: female_flyers_154
+    21300310: female_flyers_155
+    21300312: female_flyers_156
+    21300314: female_flyers_157
+    21300316: female_flyers_158
+    21300318: female_flyers_159
+    21300320: female_flyers_160
+    21300322: female_flyers_161
+    21300324: female_flyers_162
+    21300326: female_flyers_163
+    21300328: female_flyers_164
+    21300330: female_flyers_165
+    21300332: female_flyers_166
+    21300334: female_flyers_167
+    21300336: female_flyers_168
+    21300338: female_flyers_169
+    21300340: female_flyers_170
+    21300342: female_flyers_171
+    21300344: female_flyers_172
+    21300346: female_flyers_173
+    21300348: female_flyers_174
+    21300350: female_flyers_175
+    21300352: female_flyers_176
+    21300354: female_flyers_177
+    21300356: female_flyers_178
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: female_flyers_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1282
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1282
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_2
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1282
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_3
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 1282
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 23.5}
+        - {x: -17, y: 14.5}
+        - {x: -17, y: -14.5}
+        - {x: -13, y: -23.5}
+        - {x: 11, y: -23.5}
+        - {x: 17, y: -12.5}
+        - {x: 17, y: 22.5}
+        - {x: 13, y: 23.5}
+    - name: female_flyers_4
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 1282
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 23.5}
+        - {x: -22, y: 12.5}
+        - {x: -22, y: -12.5}
+        - {x: -15, y: -23.5}
+        - {x: 17, y: -23.5}
+        - {x: 22, y: -7.5}
+        - {x: 22, y: 13.5}
+        - {x: 8, y: 23.5}
+    - name: female_flyers_5
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1282
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 23.5}
+        - {x: -22, y: 22.5}
+        - {x: -22, y: -6.5}
+        - {x: -14, y: -23.5}
+        - {x: 12, y: -23.5}
+        - {x: 22, y: -11.5}
+        - {x: 22, y: 18.5}
+        - {x: 18, y: 23.5}
+    - name: female_flyers_6
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1282
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 23.5}
+        - {x: -17, y: 14.5}
+        - {x: -17, y: -14.5}
+        - {x: -13, y: -23.5}
+        - {x: 11, y: -23.5}
+        - {x: 17, y: -12.5}
+        - {x: 17, y: 22.5}
+        - {x: 13, y: 23.5}
+    - name: female_flyers_7
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1218
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_8
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1218
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_9
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1218
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_10
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1218
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_11
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 1218
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 22}
+        - {x: 11, y: 24}
+        - {x: -16, y: 24}
+        - {x: -16, y: -24}
+        - {x: 8, y: -24}
+        - {x: 9, y: -23}
+        - {x: 16, y: -12}
+    - name: female_flyers_12
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1218
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 24}
+        - {x: -11, y: 24}
+        - {x: -16, y: 16}
+        - {x: -16, y: -12}
+        - {x: -15, y: -23}
+        - {x: -13, y: -24}
+        - {x: 7, y: -24}
+        - {x: 13, y: -17}
+        - {x: 16, y: -5}
+        - {x: 16, y: 19}
+    - name: female_flyers_13
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1218
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_14
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1154
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_15
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1154
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_16
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1154
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_17
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1154
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 24.5}
+        - {x: -10, y: 24.5}
+        - {x: -13, y: 18.5}
+        - {x: -16, y: 4.5}
+        - {x: -16, y: -20.5}
+        - {x: -15, y: -24.5}
+        - {x: 12, y: -24.5}
+        - {x: 16, y: -18.5}
+        - {x: 16, y: 20.5}
+    - name: female_flyers_18
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 1154
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 24.5}
+        - {x: -14, y: 24.5}
+        - {x: -22, y: 20.5}
+        - {x: -22, y: -17.5}
+        - {x: -13, y: -24.5}
+        - {x: 13, y: -24.5}
+        - {x: 22, y: -12.5}
+        - {x: 22, y: 12.5}
+    - name: female_flyers_19
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1154
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 24.5}
+        - {x: -16, y: 24.5}
+        - {x: -22, y: 21.5}
+        - {x: -22, y: -13.5}
+        - {x: -18, y: -24.5}
+        - {x: 13, y: -24.5}
+        - {x: 22, y: -6.5}
+        - {x: 22, y: 20.5}
+    - name: female_flyers_20
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1154
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 24.5}
+        - {x: -10, y: 24.5}
+        - {x: -13, y: 18.5}
+        - {x: -16, y: 4.5}
+        - {x: -16, y: -20.5}
+        - {x: -15, y: -24.5}
+        - {x: 12, y: -24.5}
+        - {x: 16, y: -18.5}
+        - {x: 16, y: 20.5}
+    - name: female_flyers_21
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1090
+        width: 20
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_22
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1090
+        width: 20
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_23
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1090
+        width: 20
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_24
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1090
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_25
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1090
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 24}
+        - {x: -9, y: 24}
+        - {x: -16, y: 16}
+        - {x: -16, y: -10}
+        - {x: -10, y: -24}
+        - {x: 15, y: -24}
+        - {x: 16, y: -21}
+        - {x: 16, y: 21}
+        - {x: 15, y: 23}
+    - name: female_flyers_26
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1090
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -12}
+        - {x: -12, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: 24}
+        - {x: -10, y: 24}
+        - {x: -16, y: 19}
+    - name: female_flyers_27
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1090
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_28
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1025
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_29
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1024
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_30
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1024
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_31
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 1024
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_32
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1024
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_33
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 1024
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_34
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1024
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_35
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 1024
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_36
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 962
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_37
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 962
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_38
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 962
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_39
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 962
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_40
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 962
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_41
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 962
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_42
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 962
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_43
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 962
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_44
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 898
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_45
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 898
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_46
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 899
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_47
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 899
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_48
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 899
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_49
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 899
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_50
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 899
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_51
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 899
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_52
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 834
+        width: 20
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_53
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 834
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_54
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 834
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_55
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 834
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_56
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 834
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_57
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 834
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_58
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 834
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_59
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 834
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_60
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 770
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_61
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 770
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_62
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 769
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_63
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 768
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_64
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 769
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_65
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 770
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_66
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 769
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_67
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 768
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_68
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 769
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_69
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 794
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_70
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 706
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_71
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 706
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_72
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 707
+        width: 20
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_73
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 707
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_74
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 706
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 24}
+        - {x: -16, y: 13}
+        - {x: -16, y: -15}
+        - {x: -12, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: 24}
+    - name: female_flyers_75
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 706
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_76
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 706
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_77
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 706
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_78
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 706
+        width: 20
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_79
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 642
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_80
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 642
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_81
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 641
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_82
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 641
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_83
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 641
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_84
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 642
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_85
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 641
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_86
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 641
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_87
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 641
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_88
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 578
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_89
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 578
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_90
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 579
+        width: 20
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_91
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 579
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_92
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 578
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 24}
+        - {x: -12, y: 24}
+        - {x: -15, y: 23}
+        - {x: -16, y: 13}
+        - {x: -16, y: -16}
+        - {x: -11, y: -22}
+        - {x: -9, y: -24}
+        - {x: 8, y: -24}
+        - {x: 15, y: -12}
+        - {x: 16, y: -10}
+        - {x: 16, y: 9}
+    - name: female_flyers_93
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 578
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_94
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 578
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_95
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 578
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_96
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 578
+        width: 20
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_97
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 514
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_98
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 514
+        width: 26
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_99
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 514
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_100
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 514
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_101
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 514
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 24}
+        - {x: -16.5, y: 20}
+        - {x: -16.5, y: -24}
+        - {x: 11.5, y: -24}
+        - {x: 16.5, y: -4}
+        - {x: 16.5, y: 13}
+        - {x: 5.5, y: 24}
+    - name: female_flyers_102
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 514
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 24}
+        - {x: -18.5, y: -24}
+        - {x: 8.5, y: -24}
+        - {x: 18.5, y: -2}
+        - {x: 18.5, y: 24}
+    - name: female_flyers_103
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 450
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_104
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 449
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 23.5}
+        - {x: -8, y: 18.5}
+        - {x: -16, y: -13.5}
+        - {x: -16, y: -22.5}
+        - {x: -13, y: -23.5}
+        - {x: 16, y: -23.5}
+        - {x: 16, y: 23.5}
+    - name: female_flyers_105
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 450
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_106
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 450
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: -21}
+        - {x: -13.5, y: -24}
+        - {x: 17.5, y: -24}
+        - {x: 18.5, y: -23}
+        - {x: 18.5, y: 22}
+        - {x: 17.5, y: 24}
+        - {x: -3.5, y: 24}
+        - {x: -7.5, y: 22}
+        - {x: -18.5, y: -5}
+    - name: female_flyers_107
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 450
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 24}
+        - {x: -20.5, y: 15}
+        - {x: -20.5, y: -14}
+        - {x: -13.5, y: -24}
+        - {x: 19.5, y: -24}
+        - {x: 20.5, y: -23}
+        - {x: 20.5, y: 21}
+        - {x: 15.5, y: 24}
+    - name: female_flyers_108
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 450
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.5, y: -3}
+        - {x: -3.5, y: -24}
+        - {x: 21.5, y: -24}
+        - {x: 21.5, y: 19}
+        - {x: 19.5, y: 24}
+        - {x: -4.5, y: 24}
+        - {x: -21.5, y: 12}
+    - name: female_flyers_109
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 386
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_110
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 385
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_111
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 386
+        width: 23
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_112
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 386
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_113
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 386
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_114
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 386
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 24.5}
+        - {x: -19.5, y: 18.5}
+        - {x: -19.5, y: -24.5}
+        - {x: 7.5, y: -24.5}
+        - {x: 19.5, y: -18.5}
+        - {x: 19.5, y: -0.5}
+        - {x: 7.5, y: 24.5}
+    - name: female_flyers_115
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 322
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_116
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 321
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 23.5}
+        - {x: -16, y: -23.5}
+        - {x: 16, y: -23.5}
+        - {x: 16, y: -8.5}
+        - {x: 9, y: 22.5}
+        - {x: 6, y: 23.5}
+    - name: female_flyers_117
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 322
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_118
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 322
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.5, y: 24}
+        - {x: -14.5, y: 24}
+        - {x: -18.5, y: 23}
+        - {x: -18.5, y: -21}
+        - {x: -17.5, y: -24}
+        - {x: 5.5, y: -24}
+        - {x: 6.5, y: -23}
+        - {x: 18.5, y: -18}
+        - {x: 18.5, y: 2}
+    - name: female_flyers_119
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 322
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 24}
+        - {x: -20.5, y: 16}
+        - {x: -20.5, y: -24}
+        - {x: 14.5, y: -24}
+        - {x: 20.5, y: -21}
+        - {x: 20.5, y: 8}
+        - {x: 5.5, y: 24}
+    - name: female_flyers_120
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 322
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: 24}
+        - {x: -21.5, y: 22}
+        - {x: -21.5, y: -24}
+        - {x: 9.5, y: -24}
+        - {x: 21.5, y: -16}
+        - {x: 21.5, y: 11}
+        - {x: 5.5, y: 24}
+    - name: female_flyers_121
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 258
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_122
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 257
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_123
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 256
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_124
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 256
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_125
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 256
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_126
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 256
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_127
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 256
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_128
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 256
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_129
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 256
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_130
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 256
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_131
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 256
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_132
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 256
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_133
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 256
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_134
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 194
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_135
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 194
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_136
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 194
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 24}
+        - {x: -12, y: 23}
+        - {x: -16, y: 14}
+        - {x: -16, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: 14}
+        - {x: 13, y: 24}
+    - name: female_flyers_137
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 194
+        width: 35
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 23}
+        - {x: -17.5, y: 12}
+        - {x: -17.5, y: -14}
+        - {x: -11.5, y: -23}
+        - {x: 13.5, y: -23}
+        - {x: 17.5, y: -16}
+        - {x: 17.5, y: 23}
+    - name: female_flyers_138
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 194
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 24}
+        - {x: -17.5, y: 10}
+        - {x: -17.5, y: -8}
+        - {x: -7.5, y: -23}
+        - {x: -6.5, y: -24}
+        - {x: 17.5, y: -24}
+        - {x: 17.5, y: 24}
+    - name: female_flyers_139
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 194
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 24}
+        - {x: -16, y: 17}
+        - {x: -16, y: -13}
+        - {x: -4, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: 24}
+    - name: female_flyers_140
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 194
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 24}
+        - {x: -17, y: 16}
+        - {x: -17, y: -1}
+        - {x: -6, y: -23}
+        - {x: -5, y: -24}
+        - {x: 17, y: -24}
+        - {x: 17, y: 24}
+    - name: female_flyers_141
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 194
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 24}
+        - {x: -18, y: 20}
+        - {x: -18, y: -11}
+        - {x: -13, y: -24}
+        - {x: 16, y: -24}
+        - {x: 18, y: -19}
+        - {x: 18, y: 22}
+        - {x: 14, y: 24}
+    - name: female_flyers_142
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 194
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 24}
+        - {x: -19, y: 16}
+        - {x: -19, y: -12}
+        - {x: -10, y: -24}
+        - {x: 13, y: -24}
+        - {x: 19, y: -15}
+        - {x: 19, y: 24}
+    - name: female_flyers_143
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 194
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 24}
+        - {x: -17.5, y: 10}
+        - {x: -17.5, y: -8}
+        - {x: -7.5, y: -23}
+        - {x: -6.5, y: -24}
+        - {x: 17.5, y: -24}
+        - {x: 17.5, y: 24}
+    - name: female_flyers_144
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 194
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 24}
+        - {x: -17, y: 20}
+        - {x: -17, y: -19}
+        - {x: -16, y: -24}
+        - {x: 17, y: -24}
+        - {x: 17, y: 17}
+        - {x: 14, y: 24}
+    - name: female_flyers_145
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 194
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.5, y: 24}
+        - {x: -6.5, y: 24}
+        - {x: -17.5, y: 10}
+        - {x: -17.5, y: -8}
+        - {x: -7.5, y: -23}
+        - {x: -6.5, y: -24}
+        - {x: 16.5, y: -24}
+        - {x: 17.5, y: -20}
+        - {x: 17.5, y: 20}
+        - {x: 16.5, y: 23}
+    - name: female_flyers_146
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 194
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 24}
+        - {x: -17, y: 23}
+        - {x: -17, y: -19}
+        - {x: -16, y: -24}
+        - {x: 17, y: -24}
+        - {x: 17, y: 24}
+    - name: female_flyers_147
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 130
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_148
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 129
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_149
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 131
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_150
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 130
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_151
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 130
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_152
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 130
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_153
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 130
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_154
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 130
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_155
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 130
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_156
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 130
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_157
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 130
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_158
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 130
+        width: 22
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_159
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 130
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_160
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 66
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_161
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 66
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_162
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 66
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 24}
+        - {x: -16, y: -24}
+        - {x: 11, y: -24}
+        - {x: 16, y: -16}
+        - {x: 16, y: 15}
+        - {x: 12, y: 24}
+    - name: female_flyers_163
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 66
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 24}
+        - {x: -17.5, y: -24}
+        - {x: 12.5, y: -24}
+        - {x: 17.5, y: -18}
+        - {x: 17.5, y: 19}
+        - {x: 9.5, y: 24}
+    - name: female_flyers_164
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 66
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 24}
+        - {x: -14.5, y: 18}
+        - {x: -17.5, y: 14}
+        - {x: -17.5, y: -15}
+        - {x: -14.5, y: -24}
+        - {x: 9.5, y: -24}
+        - {x: 17.5, y: -7}
+        - {x: 17.5, y: 14}
+        - {x: 5.5, y: 24}
+    - name: female_flyers_165
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 66
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 24}
+        - {x: -16, y: 21}
+        - {x: -16, y: -24}
+        - {x: 7, y: -24}
+        - {x: 16, y: -4}
+        - {x: 16, y: 16}
+        - {x: 8, y: 24}
+    - name: female_flyers_166
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 66
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 24}
+        - {x: -17, y: 23}
+        - {x: -17, y: -24}
+        - {x: 7, y: -24}
+        - {x: 17, y: -4}
+        - {x: 17, y: 18}
+        - {x: 6, y: 24}
+    - name: female_flyers_167
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 66
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 24}
+        - {x: -18, y: 15}
+        - {x: -18, y: -3}
+        - {x: -15, y: -23}
+        - {x: -14, y: -24}
+        - {x: 7, y: -24}
+        - {x: 18, y: -11}
+        - {x: 18, y: 13}
+        - {x: 11, y: 24}
+    - name: female_flyers_168
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 66
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 24}
+        - {x: -19, y: 17}
+        - {x: -19, y: -24}
+        - {x: 10, y: -24}
+        - {x: 19, y: -5}
+        - {x: 19, y: 14}
+        - {x: 7, y: 24}
+    - name: female_flyers_169
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 66
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 24}
+        - {x: -14.5, y: 18}
+        - {x: -17.5, y: 14}
+        - {x: -17.5, y: -15}
+        - {x: -14.5, y: -24}
+        - {x: 9.5, y: -24}
+        - {x: 17.5, y: -7}
+        - {x: 17.5, y: 14}
+        - {x: 5.5, y: 24}
+    - name: female_flyers_170
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 66
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 24}
+        - {x: -15, y: 21}
+        - {x: -17, y: 14}
+        - {x: -17, y: -18}
+        - {x: -16, y: -23}
+        - {x: -15, y: -24}
+        - {x: 10, y: -24}
+        - {x: 17, y: -10}
+        - {x: 17, y: 17}
+        - {x: 8, y: 24}
+    - name: female_flyers_171
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 66
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 24}
+        - {x: -14.5, y: 18}
+        - {x: -17.5, y: 13}
+        - {x: -17.5, y: -14}
+        - {x: -15.5, y: -23}
+        - {x: -14.5, y: -24}
+        - {x: 10.5, y: -24}
+        - {x: 17.5, y: -17}
+        - {x: 17.5, y: 17}
+        - {x: 13.5, y: 24}
+    - name: female_flyers_172
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 66
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 24}
+        - {x: -17, y: 21}
+        - {x: -17, y: -24}
+        - {x: 10, y: -24}
+        - {x: 17, y: -17}
+        - {x: 17, y: 16}
+        - {x: 13, y: 24}
+    - name: female_flyers_173
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_174
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 2
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_175
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 2
+        width: 27
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_176
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 2
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_177
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 3
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: female_flyers_178
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 0
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 18.5}
+        - {x: -17, y: 15.5}
+        - {x: -17, y: -18.5}
+        - {x: 17, y: -18.5}
+        - {x: 17, y: 18.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
