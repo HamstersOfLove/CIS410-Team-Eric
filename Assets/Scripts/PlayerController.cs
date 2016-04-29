@@ -67,6 +67,7 @@ public class PlayerController : MonoBehaviour
 
 			//animator.speed = 0;
 			Destroy (this);
+			Application.LoadLevel (2);
 		}
 
 		// Tests for collision with Coffee tagged objects
