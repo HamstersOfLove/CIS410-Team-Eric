@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class EnemyController : MonoBehaviour {
 
@@ -10,7 +11,9 @@ public class EnemyController : MonoBehaviour {
 
 	private bool dirRight = true;
 	private Animator animator;
+	private Animator playerAnimator;
 	private Rigidbody2D rb;
+
 
 	// Use this for initialization
 	void Start()
@@ -44,11 +47,18 @@ public class EnemyController : MonoBehaviour {
 		}
 	}
 
-	void OnCollisionEnter2D(Collision2D col){
+	void OnTriggerEnter2D(Collider2D col){
 
+		Console.Write("HERE"); 
 		// Tests for collision with Ground tagged objects
 		if (col.gameObject.tag == "Boundry" || col.gameObject.tag == "Floor Boundry") {
 			Destroy (this);
+		}
+
+		if (col.gameObject.tag == "Player") {
+			
+			playerAnimator = col.gameObject.GetComponent<Animator>();
+			playerAnimator.SetInteger ("Direction", 2);
 		}
 	}
 }
