@@ -7,10 +7,12 @@ public class PlayerController : MonoBehaviour
 	
 	public Vector2 jumpHeight;
 	public Text endGame;
+	public Text diplomaCount;
 
+	private Vector3 movingGround;
 	private Animator animator;
 	private Rigidbody2D rb;
-
+	private int count = 0;
 	private float playerSpeed = 0.085f;
 	private bool isJumping = false;
 
@@ -19,7 +21,10 @@ public class PlayerController : MonoBehaviour
 	{
 		rb = GetComponent<Rigidbody2D> ();
 		animator = this.GetComponent<Animator>();
+
 		endGame.text = "";
+		diplomaCount.text = "Classes Taken: " + count + "/5";
+
 
 	}
 
@@ -80,10 +85,28 @@ public class PlayerController : MonoBehaviour
 			StartCoroutine(SpeedUp ());
 		}
 
+		// Tests for collision with Diploma tagged objects
+		else if (col.gameObject.tag == "Diploma") {
+			col.gameObject.SetActive (false);
+
+			count += 1;
+			CountText ();
+		}
+
 		// Tests for collision with End Game objects
 		else if (col.gameObject.tag == "End Game") {
 			
 			StartCoroutine(EndGame ());
+		}
+
+		else if(col.gameObject.tag == "Moving Ground"){
+			
+			isJumping = false;
+			Vector3 groundPosition = col.transform.localPosition;
+			Vector3 playerPosition = this.transform.localPosition;
+
+			playerPosition.x = groundPosition.x; 
+
 		}
 
 	
@@ -92,6 +115,11 @@ public class PlayerController : MonoBehaviour
 	void WinText()
 	{
 		endGame.text = "We did it!";
+	}
+
+	void CountText ()
+	{
+		diplomaCount.text = "Classes Taken: " + count + "/5";
 	}
 
 	// Gives player a 5 second speed boost
