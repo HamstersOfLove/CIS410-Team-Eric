@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
 	private Animator animator;
 	private Rigidbody2D rb;
 
-	private float playerSpeed = 0.067f;
+	private float playerSpeed = 0.085f;
 	private bool isJumping = false;
 
 	// Use this for initialization
@@ -98,7 +98,7 @@ public class PlayerController : MonoBehaviour
 	IEnumerator SpeedUp() {
 		playerSpeed = 0.125f;
 		yield return new WaitForSeconds(5.0f);
-		playerSpeed = 0.067f;
+		playerSpeed = 0.085f;
 	}
 
 	IEnumerator EndGame() {
