@@ -56,9 +56,9 @@ public class EnemyController : MonoBehaviour {
 		}
 
 		if (col.gameObject.tag == "Player") {
-			
-			playerAnimator = col.gameObject.GetComponent<Animator>();
-			playerAnimator.SetInteger ("Direction", 2);
+			animator.speed = 0;
+			Destroy (this);
 		}
 	}
+
 }

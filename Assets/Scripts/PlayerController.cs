@@ -72,17 +72,15 @@ public class PlayerController : MonoBehaviour
 		// Tests for collision with Enemy tagged objects
 		else if (col.gameObject.tag == "Enemy") {
 			animator.SetInteger ("Direction", 2);
-
+			StartCoroutine (OnDeath ());
 			//animator.speed = 0;
-			Destroy (this);
-			Application.LoadLevel (2);
 		}
 
 		// Tests for collision with Coffee tagged objects
 		else if (col.gameObject.tag == "Coffee") {
 			col.gameObject.SetActive (false);
 
-			StartCoroutine(SpeedUp ());
+			StartCoroutine (SpeedUp ());
 		}
 
 		// Tests for collision with Diploma tagged objects
@@ -95,22 +93,30 @@ public class PlayerController : MonoBehaviour
 
 		// Tests for collision with End Game objects
 		else if (col.gameObject.tag == "End Game") {
-			
-			StartCoroutine(EndGame ());
+			if (count == 5) {
+				StartCoroutine (EndGame ());
+
+			}
 		}
+		// TODO Not working. Player position does not follow ground
+		else if (col.gameObject.tag == "Moving Ground") {
 
-		else if(col.gameObject.tag == "Moving Ground"){
-			
-			isJumping = false;
-			Vector3 groundPosition = col.transform.localPosition;
-			Vector3 playerPosition = this.transform.localPosition;
+				isJumping = false;
+				transform.parent = col.transform;
 
-			playerPosition.x = groundPosition.x; 
-
+			}
+		else if (col.gameObject.tag == "Death Box") 
+		{
+			StartCoroutine (OnDeath ());
 		}
-
-	
 	}
+	void OnCollisionExit2D(Collision2D col)
+	{
+		if (col.gameObject.tag == "Moving Ground") {
+			transform.parent = null;
+		}
+	}
+
 
 	void WinText()
 	{
@@ -133,5 +139,10 @@ public class PlayerController : MonoBehaviour
 		yield return new WaitForSeconds(1.0f);
 		this.gameObject.SetActive (false);
 		WinText ();
+	}
+
+	IEnumerator OnDeath() {
+		yield return new WaitForSeconds(0.5f);
+		Application.LoadLevel (2);
 	}
 }
