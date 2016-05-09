@@ -6,10 +6,12 @@ public class PlayerController : MonoBehaviour
 {
 	
 	public Vector2 jumpHeight;
+	public Text endGame;
+
 	private Animator animator;
 	private Rigidbody2D rb;
 
-	private float playerSpeed = 0.1f;
+	private float playerSpeed = 0.067f;
 	private bool isJumping = false;
 
 	// Use this for initialization
@@ -17,6 +19,7 @@ public class PlayerController : MonoBehaviour
 	{
 		rb = GetComponent<Rigidbody2D> ();
 		animator = this.GetComponent<Animator>();
+		endGame.text = "";
 
 	}
 
@@ -62,7 +65,7 @@ public class PlayerController : MonoBehaviour
 		}
 
 		// Tests for collision with Enemy tagged objects
-		if (col.gameObject.tag == "Enemy") {
+		else if (col.gameObject.tag == "Enemy") {
 			animator.SetInteger ("Direction", 2);
 
 			//animator.speed = 0;
@@ -71,19 +74,36 @@ public class PlayerController : MonoBehaviour
 		}
 
 		// Tests for collision with Coffee tagged objects
-		if (col.gameObject.tag == "Coffee") {
+		else if (col.gameObject.tag == "Coffee") {
 			col.gameObject.SetActive (false);
 
 			StartCoroutine(SpeedUp ());
 		}
+
+		// Tests for collision with End Game objects
+		else if (col.gameObject.tag == "End Game") {
+			
+			StartCoroutine(EndGame ());
+		}
+
 	
+	}
+
+	void WinText()
+	{
+		endGame.text = "We did it!";
 	}
 
 	// Gives player a 5 second speed boost
 	IEnumerator SpeedUp() {
-		playerSpeed = 0.2f;
+		playerSpeed = 0.125f;
 		yield return new WaitForSeconds(5.0f);
-		playerSpeed = 0.1f;
+		playerSpeed = 0.067f;
 	}
 
+	IEnumerator EndGame() {
+		yield return new WaitForSeconds(1.0f);
+		this.gameObject.SetActive (false);
+		WinText ();
+	}
 }
