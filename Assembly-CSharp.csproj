@@ -45,22 +45,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\PlatformMove.cs" />
-     <Compile Include="Assets\RainMaker\Demo\DemoScript.cs" />
-     <Compile Include="Assets\RainMaker\Demo\DemoScript2D.cs" />
-     <Compile Include="Assets\RainMaker\Prefab\BaseRainScript.cs" />
-     <Compile Include="Assets\RainMaker\Prefab\RainCollision.cs" />
-     <Compile Include="Assets\RainMaker\Prefab\RainScript.cs" />
-     <Compile Include="Assets\RainMaker\Prefab\RainScript2D.cs" />
+     <Compile Include="Assets\Prefab\Background\RainMaker\Demo\DemoScript.cs" />
+     <Compile Include="Assets\Prefab\Background\RainMaker\Demo\DemoScript2D.cs" />
      <Compile Include="Assets\Scripts\BGScroller.cs" />
+     <Compile Include="Assets\Scripts\BaseRainScript.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\EnemyController.cs" />
      <Compile Include="Assets\Scripts\LevelManager.cs" />
+     <Compile Include="Assets\Scripts\PlatformMove.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\RainCollision.cs" />
+     <Compile Include="Assets\Scripts\RainScript.cs" />
+     <Compile Include="Assets\Scripts\RainScript2D.cs" />
      <Compile Include="Assets\Scripts\Rotator.cs" />
      <Compile Include="Assets\Scripts\Scroll.cs" />
-     <None Include="Assets\RainMaker\Prefab\RainShader.shader" />
-     <None Include="Assets\RainMaker\Readme.txt" />
+     <None Include="Assets\Prefab\Background\RainMaker\Prefab\RainShader.shader" />
+     <None Include="Assets\Prefab\Background\RainMaker\Readme.txt" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>

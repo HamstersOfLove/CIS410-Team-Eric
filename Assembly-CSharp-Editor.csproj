@@ -46,8 +46,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
-     <None Include="Assets\RainMaker\Prefab\RainShader.shader" />
-     <None Include="Assets\RainMaker\Readme.txt" />
+     <None Include="Assets\Prefab\Background\RainMaker\Prefab\RainShader.shader" />
+     <None Include="Assets\Prefab\Background\RainMaker\Readme.txt" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
