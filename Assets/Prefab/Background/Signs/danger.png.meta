@@ -1,0 +1,135 @@
+fileFormatVersion: 2
+guid: 3ac0bcc1c8db74b6983fc4232bcc02b5
+timeCreated: 1463003216
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: danger_0
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: danger_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 36
+        width: 831
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 383.5, y: -140}
+        - {x: 385.5, y: -140}
+        - {x: 387.5, y: -138}
+        - {x: 389.5, y: -138}
+        - {x: 405.5, y: -122}
+        - {x: 405.5, y: -120}
+        - {x: 411.5, y: -114}
+        - {x: 411.5, y: -112}
+        - {x: 413.5, y: -110}
+        - {x: 413.5, y: -106}
+        - {x: 415.5, y: -104}
+        - {x: 415.5, y: 102}
+        - {x: 413.5, y: 104}
+        - {x: 413.5, y: 108}
+        - {x: 411.5, y: 110}
+        - {x: 411.5, y: 112}
+        - {x: 409.5, y: 114}
+        - {x: 409.5, y: 116}
+        - {x: 407.5, y: 118}
+        - {x: 407.5, y: 120}
+        - {x: 391.5, y: 136}
+        - {x: 389.5, y: 136}
+        - {x: 385.5, y: 140}
+        - {x: 383.5, y: 140}
+        - {x: 381.5, y: 142}
+        - {x: 377.5, y: 142}
+        - {x: 375.5, y: 144}
+        - {x: -375.5, y: 144}
+        - {x: -377.5, y: 142}
+        - {x: -381.5, y: 142}
+        - {x: -385.5, y: 138}
+        - {x: -387.5, y: 138}
+        - {x: -391.5, y: 134}
+        - {x: -393.5, y: 134}
+        - {x: -405.5, y: 122}
+        - {x: -405.5, y: 120}
+        - {x: -407.5, y: 118}
+        - {x: -407.5, y: 116}
+        - {x: -409.5, y: 114}
+        - {x: -409.5, y: 112}
+        - {x: -411.5, y: 110}
+        - {x: -411.5, y: 108}
+        - {x: -413.5, y: 106}
+        - {x: -413.5, y: 104}
+        - {x: -415.5, y: 102}
+        - {x: -415.5, y: -102}
+        - {x: -413.5, y: -104}
+        - {x: -413.5, y: -108}
+        - {x: -411.5, y: -110}
+        - {x: -411.5, y: -112}
+        - {x: -409.5, y: -114}
+        - {x: -409.5, y: -116}
+        - {x: -405.5, y: -120}
+        - {x: -405.5, y: -122}
+        - {x: -391.5, y: -136}
+        - {x: -389.5, y: -136}
+        - {x: -387.5, y: -138}
+        - {x: -385.5, y: -138}
+        - {x: -383.5, y: -140}
+        - {x: -381.5, y: -140}
+        - {x: -379.5, y: -142}
+        - {x: -377.5, y: -142}
+        - {x: -375.5, y: -144}
+        - {x: 375.5, y: -144}
+        - {x: 377.5, y: -142}
+        - {x: 381.5, y: -142}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
