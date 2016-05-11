@@ -147,7 +147,7 @@ public class PlayerController : MonoBehaviour
 	}
 
 	IEnumerator OnDeath() { // Called when player dies
-		Destroy (this);
+		
 		yield return new WaitForSeconds(0.5f);
 
 		Application.LoadLevel (2);
