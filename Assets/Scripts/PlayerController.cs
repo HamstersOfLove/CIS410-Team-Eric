@@ -56,6 +56,7 @@ public class PlayerController : MonoBehaviour
 			if (isJumping == false) { // --------------------- Checks for double jumps ---------
 				rb.AddForce (jumpHeight, ForceMode2D.Impulse);
 				isJumping = true;
+				GetComponent<AudioSource>().Play();
 			}
 
 		}
