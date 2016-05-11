@@ -16,9 +16,15 @@ public class PlayerController : MonoBehaviour
 	private float playerSpeed = 0.085f;
 	private bool isJumping = false;
 
+	private string currentLevel;
+	private string nextLevel;
+
 	// Use this for initialization
 	void Start()
 	{
+
+		currentLevel = Application.loadedLevelName;
+
 		rb = GetComponent<Rigidbody2D> ();
 		animator = this.GetComponent<Animator>();
 
@@ -56,6 +62,7 @@ public class PlayerController : MonoBehaviour
 			if (isJumping == false) { // --------------------- Checks for double jumps ---------
 				rb.AddForce (jumpHeight, ForceMode2D.Impulse);
 				isJumping = true;
+				GetComponent<AudioSource>().Play();
 			}
 
 		}
@@ -93,9 +100,31 @@ public class PlayerController : MonoBehaviour
 
 		// Tests for collision with End Game objects (level complete)
 		else if (col.gameObject.tag == "End Game") {
-			if (count == 5) {
-				StartCoroutine (EndGame ());
+			if (count == 0) {
 
+				if (currentLevel == "AdventuresOfEric") {
+					print ("Loading Level 2!");
+					nextLevel = "Level2";
+					WinText ();
+					StartCoroutine (LevelTransitionWait ());
+				} else if (currentLevel == "Level2") {
+					print ("Loading Level 3!");
+					nextLevel = "Level3";
+					WinText ();
+					StartCoroutine (LevelTransitionWait ());
+				} else if (currentLevel == "Level3") {
+					print ("Loading Level 4!");
+					nextLevel = "Level4";
+					WinText ();
+					StartCoroutine (LevelTransitionWait ());
+				} else if (currentLevel == "Level4") {
+					print ("Loading Level 5!");
+					nextLevel = "Level5";
+					WinText ();
+					StartCoroutine (LevelTransitionWait ());
+				}
+			} else {
+				StartCoroutine (NotFinished ());
 			}
 		}
 		// TODO Not working. Player position does not follow ground
@@ -140,17 +169,25 @@ public class PlayerController : MonoBehaviour
 		playerSpeed = 0.085f;
 	}
 
-	IEnumerator EndGame() { // Called when player completed level
-		yield return new WaitForSeconds(1.0f);
-		this.gameObject.SetActive (false);
-		WinText ();
+	IEnumerator LevelTransitionWait() {
+		print ("Transition Wait: " + nextLevel);
+		yield return new WaitForSeconds(2.0f);
+		Application.LoadLevel (nextLevel);
 	}
 
+
 	IEnumerator OnDeath() { // Called when player dies
-		Destroy (this);
+		
 		yield return new WaitForSeconds(0.5f);
 
 		Application.LoadLevel (2);
+
+	}
+	IEnumerator NotFinished() { // Called if player hasn't collected all classes
+
+		endGame.text = "You haven't passed all your classes!";
+		yield return new WaitForSeconds(2f);
+		endGame.text = "";
 
 	}
 }

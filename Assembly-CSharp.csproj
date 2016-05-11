@@ -45,8 +45,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Prefab\Background\RainMaker\Demo\DemoScript.cs" />
-     <Compile Include="Assets\Prefab\Background\RainMaker\Demo\DemoScript2D.cs" />
      <Compile Include="Assets\Scripts\BGScroller.cs" />
      <Compile Include="Assets\Scripts\BaseRainScript.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
@@ -59,8 +57,10 @@
      <Compile Include="Assets\Scripts\RainScript2D.cs" />
      <Compile Include="Assets\Scripts\Rotator.cs" />
      <Compile Include="Assets\Scripts\Scroll.cs" />
-     <None Include="Assets\Prefab\Background\RainMaker\Prefab\RainShader.shader" />
-     <None Include="Assets\Prefab\Background\RainMaker\Readme.txt" />
+     <Compile Include="Assets\Textures\RainMaker\Demo\DemoScript.cs" />
+     <Compile Include="Assets\Textures\RainMaker\Demo\DemoScript2D.cs" />
+     <None Include="Assets\Textures\RainMaker\Prefab\RainShader.shader" />
+     <None Include="Assets\Textures\RainMaker\Readme.txt" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>

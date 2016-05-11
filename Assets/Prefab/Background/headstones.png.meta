@@ -1,0 +1,586 @@
+fileFormatVersion: 2
+guid: e77b846245bd64c5eaf20710cb5a212c
+timeCreated: 1462942913
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: headstones_0
+    21300002: headstones_1
+    21300004: headstones_2
+    21300006: headstones_3
+    21300008: headstones_4
+    21300010: headstones_5
+    21300012: headstones_6
+    21300014: headstones_7
+    21300016: headstones_8
+    21300018: headstones_9
+    21300020: headstones_10
+    21300022: headstones_11
+    21300024: headstones_12
+    21300026: headstones_13
+    21300028: headstones_14
+    21300030: headstones_15
+    21300032: headstones_16
+    21300034: headstones_17
+    21300036: headstones_18
+    21300038: headstones_19
+    21300040: headstones_20
+    21300042: headstones_21
+    21300044: headstones_22
+    21300046: headstones_23
+    21300048: headstones_24
+    21300050: headstones_25
+    21300052: headstones_26
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: headstones_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 411
+        width: 84
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 82}
+        - {x: -42, y: 63}
+        - {x: -42, y: -82}
+        - {x: 42, y: -82}
+        - {x: 42, y: 82}
+    - name: headstones_1
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 433
+        width: 84
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 68}
+        - {x: -36, y: 49}
+        - {x: -42, y: 3}
+        - {x: -42, y: -61}
+        - {x: -33, y: -68}
+        - {x: 39, y: -68}
+        - {x: 42, y: -67}
+        - {x: 42, y: 7}
+        - {x: 31, y: 45}
+        - {x: 19, y: 68}
+    - name: headstones_2
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 433
+        width: 78
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 63}
+        - {x: -39, y: -1}
+        - {x: -39, y: -49}
+        - {x: -20, y: -63}
+        - {x: 33, y: -63}
+        - {x: 39, y: -61}
+        - {x: 39, y: 7}
+        - {x: 32, y: 48}
+        - {x: 5, y: 63}
+    - name: headstones_3
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 447
+        width: 128
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27, y: 59}
+        - {x: -53, y: 59}
+        - {x: -64, y: 56}
+        - {x: -64, y: -40}
+        - {x: 10, y: -59}
+        - {x: 62, y: -59}
+        - {x: 64, y: -58}
+        - {x: 64, y: 33}
+        - {x: 63, y: 46}
+    - name: headstones_4
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 451
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30, y: 66}
+        - {x: -41, y: 49}
+        - {x: -41, y: -66}
+        - {x: 41, y: -66}
+        - {x: 41, y: 60}
+        - {x: 25, y: 66}
+    - name: headstones_5
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 417
+        width: 72
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 84}
+        - {x: -36, y: 64}
+        - {x: -36, y: -84}
+        - {x: 36, y: -84}
+        - {x: 36, y: 67}
+        - {x: 18, y: 84}
+    - name: headstones_6
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 423
+        width: 88
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40, y: 30}
+        - {x: -44, y: -23}
+        - {x: -44, y: -71}
+        - {x: -28, y: -76}
+        - {x: 40, y: -76}
+        - {x: 44, y: -75}
+        - {x: 44, y: -7}
+        - {x: 31, y: 70}
+        - {x: 16, y: 76}
+        - {x: -13, y: 76}
+        - {x: -14, y: 71}
+    - name: headstones_7
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 403
+        width: 178
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 22}
+        - {x: 27, y: 72}
+        - {x: 12, y: 88}
+        - {x: -12, y: 88}
+        - {x: -23, y: 67}
+        - {x: -24, y: 52}
+        - {x: -9, y: 47}
+        - {x: -15, y: 6}
+        - {x: -15, y: 0}
+        - {x: -17, y: 0}
+        - {x: -15, y: 6}
+        - {x: -14, y: 32}
+        - {x: -54, y: 28}
+        - {x: -89, y: -9}
+        - {x: -89, y: -88}
+        - {x: 89, y: -88}
+        - {x: 89, y: -35}
+        - {x: 80, y: 10}
+        - {x: 34, y: 36}
+        - {x: 19, y: 28}
+    - name: headstones_8
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 221
+        width: 114
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 82}
+        - {x: -41, y: 71}
+        - {x: -42, y: 54}
+        - {x: -57, y: 0}
+        - {x: -57, y: -82}
+        - {x: 57, y: -82}
+        - {x: 57, y: 75}
+        - {x: 33, y: 82}
+    - name: headstones_9
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 343
+        width: 98
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40, y: 27}
+        - {x: -49, y: -5}
+        - {x: -49, y: -15}
+        - {x: -6, y: -27}
+        - {x: 49, y: -27}
+        - {x: 49, y: 23}
+        - {x: 45, y: 27}
+    - name: headstones_10
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 271
+        width: 80
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 69}
+        - {x: -40, y: 55}
+        - {x: -40, y: -69}
+        - {x: 40, y: -69}
+        - {x: 40, y: 67}
+        - {x: 32, y: 69}
+    - name: headstones_11
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 273
+        width: 78
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 73}
+        - {x: -39, y: 63}
+        - {x: -39, y: -73}
+        - {x: 39, y: -73}
+        - {x: 39, y: 55}
+        - {x: 35, y: 73}
+    - name: headstones_12
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 275
+        width: 82
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 75}
+        - {x: -41, y: 40}
+        - {x: -41, y: -75}
+        - {x: 41, y: -75}
+        - {x: 41, y: 63}
+        - {x: 17, y: 75}
+    - name: headstones_13
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 267
+        width: 84
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42, y: 86}
+        - {x: -42, y: -86}
+        - {x: 42, y: -86}
+        - {x: 42, y: 86}
+    - name: headstones_14
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 171
+        width: 140
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 118}
+        - {x: -47, y: 118}
+        - {x: -66, y: 93}
+        - {x: -70, y: 72}
+        - {x: -70, y: -32}
+        - {x: -64, y: -99}
+        - {x: -63, y: -118}
+        - {x: 70, y: -118}
+        - {x: 70, y: 80}
+        - {x: 69, y: 95}
+    - name: headstones_15
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 225
+        width: 86
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 85}
+        - {x: -43, y: 48}
+        - {x: -43, y: -85}
+        - {x: 43, y: -85}
+        - {x: 43, y: 43}
+        - {x: 24, y: 85}
+    - name: headstones_16
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 311
+        width: 74
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 40}
+        - {x: -37, y: -11}
+        - {x: -37, y: -40}
+        - {x: 37, y: -40}
+        - {x: 37, y: -7}
+        - {x: 20, y: 40}
+    - name: headstones_17
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 193
+        width: 78
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 64}
+        - {x: -39, y: 48}
+        - {x: -39, y: -64}
+        - {x: 39, y: -64}
+        - {x: 39, y: 7}
+        - {x: 33, y: 64}
+    - name: headstones_18
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 61
+        width: 94
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 76}
+        - {x: -47, y: 60}
+        - {x: -47, y: -76}
+        - {x: 47, y: -76}
+        - {x: 47, y: 62}
+        - {x: 12, y: 76}
+    - name: headstones_19
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 65
+        width: 96
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 82}
+        - {x: -38, y: 77}
+        - {x: -48, y: 74}
+        - {x: -48, y: -82}
+        - {x: 48, y: -82}
+        - {x: 48, y: 74}
+        - {x: 37, y: 82}
+    - name: headstones_20
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 51
+        width: 122
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 99}
+        - {x: -41, y: 97}
+        - {x: -61, y: 68}
+        - {x: -61, y: -99}
+        - {x: 61, y: -99}
+        - {x: 61, y: 50}
+        - {x: 39, y: 99}
+    - name: headstones_21
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 15
+        width: 86
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 119}
+        - {x: -3, y: 119}
+        - {x: -8, y: 112}
+        - {x: -14, y: 100}
+        - {x: -22, y: 39}
+        - {x: -41, y: -27}
+        - {x: -43, y: -41}
+        - {x: -43, y: -115}
+        - {x: -17, y: -119}
+        - {x: 29, y: -119}
+        - {x: 43, y: -111}
+        - {x: 43, y: -20}
+        - {x: 23, y: 107}
+    - name: headstones_22
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 35
+        width: 62
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 87}
+        - {x: -12, y: 87}
+        - {x: -31, y: -5}
+        - {x: -31, y: -87}
+        - {x: 31, y: -87}
+        - {x: 31, y: -35}
+        - {x: 15, y: 54}
+    - name: headstones_23
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 35
+        width: 116
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 58, y: 80}
+        - {x: 19, y: 130}
+        - {x: -28, y: 130}
+        - {x: -58, y: 97}
+        - {x: -58, y: -130}
+        - {x: 58, y: -130}
+    - name: headstones_24
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 37
+        width: 86
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 73}
+        - {x: -43, y: 66}
+        - {x: -43, y: -73}
+        - {x: 43, y: -73}
+        - {x: 43, y: 73}
+    - name: headstones_25
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 15
+        width: 92
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 83}
+        - {x: -46, y: 46}
+        - {x: -46, y: -66}
+        - {x: -45, y: -83}
+        - {x: 46, y: -83}
+        - {x: 46, y: 70}
+        - {x: 21, y: 83}
+    - name: headstones_26
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 33
+        width: 158
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31, y: 53}
+        - {x: -79, y: 37}
+        - {x: -79, y: -53}
+        - {x: 79, y: -53}
+        - {x: 79, y: 44}
+        - {x: 65, y: 53}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
