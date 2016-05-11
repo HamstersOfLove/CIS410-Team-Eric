@@ -16,9 +16,15 @@ public class PlayerController : MonoBehaviour
 	private float playerSpeed = 0.085f;
 	private bool isJumping = false;
 
+	private string currentLevel;
+	private string nextLevel;
+
 	// Use this for initialization
 	void Start()
 	{
+
+		currentLevel = Application.loadedLevelName;
+
 		rb = GetComponent<Rigidbody2D> ();
 		animator = this.GetComponent<Animator>();
 
@@ -97,8 +103,29 @@ public class PlayerController : MonoBehaviour
 			if (count == 5) {
 				StartCoroutine (EndGame ());
 
+<<<<<<< HEAD
 			} else {
 				StartCoroutine (NotFinished ());
+=======
+				if (currentLevel == "AdventuresOfEric") {
+					print ("Loading Level 2!");
+					nextLevel = "Level2";
+					StartCoroutine (LevelTransitionWait());
+				} else if (currentLevel == "Level2") {
+					print ("Loading Level 3!");
+					nextLevel = "Level3";
+					StartCoroutine (LevelTransitionWait());
+				} else if (currentLevel == "Level3") {
+					print ("Loading Level 4!");
+					nextLevel = "Level4";
+					StartCoroutine (LevelTransitionWait());
+				} else if (currentLevel == "Level4") {
+					print ("Loading Level 5!");
+					nextLevel = "Level5";
+					StartCoroutine (LevelTransitionWait());
+				}
+
+>>>>>>> 2bcdd0b4523200341b5394e75b1cfd7533cb4752
 			}
 		}
 		// TODO Not working. Player position does not follow ground
@@ -148,6 +175,13 @@ public class PlayerController : MonoBehaviour
 		this.gameObject.SetActive (false);
 		WinText ();
 	}
+
+	IEnumerator LevelTransitionWait() {
+		print ("Transition Wait: " + nextLevel);
+		yield return new WaitForSeconds(2.0f);
+		Application.LoadLevel (nextLevel);
+	}
+
 
 	IEnumerator OnDeath() { // Called when player dies
 		
