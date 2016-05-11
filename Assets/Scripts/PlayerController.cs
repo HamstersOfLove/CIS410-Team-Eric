@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
 	private Animator animator;
 	private Rigidbody2D rb;
 	private int count = 0;
-	private float playerSpeed = 0.085f;
+	private float playerSpeed = 0.065f;
 	private bool isJumping = false;
 
 	private string currentLevel;
@@ -180,9 +180,9 @@ public class PlayerController : MonoBehaviour
 	}
 
 	IEnumerator SpeedUp() { // Called when player achieves a speed up power up
-		playerSpeed = 0.125f;
+		playerSpeed = 0.095f;
 		yield return new WaitForSeconds(5.0f);
-		playerSpeed = 0.085f;
+		playerSpeed = 0.065f;
 	}
 
 	IEnumerator LevelTransitionWait() {
@@ -195,8 +195,7 @@ public class PlayerController : MonoBehaviour
 	IEnumerator OnDeath() { // Called when player dies
 		gameOver.Play ();
 		yield return new WaitForSeconds(0.5f);
-
-		Application.LoadLevel (2);
+		Application.LoadLevel ("Gameover");
 
 	}
 	IEnumerator NotFinished() { // Called if player hasn't collected all classes
