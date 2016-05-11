@@ -4,7 +4,9 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
-	
+	public static string currentScene;
+
+
 	public Vector2 jumpHeight;
 	public Text endGame;
 	public Text diplomaCount;
@@ -16,13 +18,23 @@ public class PlayerController : MonoBehaviour
 	private float playerSpeed = 0.085f;
 	private bool isJumping = false;
 
+	private string currentLevel;
+	private string nextLevel;
+
 	public AudioSource[] sounds;
 	private AudioSource jump, powerUP, scrollPickUp, gameOver;
 
+	void Awake() {
+		DontDestroyOnLoad(transform.gameObject);
+	}
 
 	// Use this for initialization
 	void Start()
 	{
+
+		currentLevel = Application.loadedLevelName;
+		currentScene = currentLevel;
+
 		rb = GetComponent<Rigidbody2D> ();
 		animator = this.GetComponent<Animator>();
 
@@ -70,7 +82,7 @@ public class PlayerController : MonoBehaviour
 			}
 
 		}
-	
+
 	}
 	// Player collision controls
 	void OnCollisionEnter2D(Collision2D col){
@@ -104,18 +116,40 @@ public class PlayerController : MonoBehaviour
 
 		// Tests for collision with End Game objects (level complete)
 		else if (col.gameObject.tag == "End Game") {
-			if (count == 5) {
-				StartCoroutine (EndGame ());
+			if (count > 0) {
 
+				if (currentLevel == "AdventuresOfEric") {
+					print ("Loading Level 2!");
+					nextLevel = "Level2";
+					WinText ();
+					StartCoroutine (LevelTransitionWait ());
+				} else if (currentLevel == "Level2") {
+					print ("Loading Level 3!");
+					nextLevel = "Level3";
+					WinText ();
+					StartCoroutine (LevelTransitionWait ());
+				} else if (currentLevel == "Level3") {
+					print ("Loading Level 4!");
+					nextLevel = "Level4";
+					WinText ();
+					StartCoroutine (LevelTransitionWait ());
+				} else if (currentLevel == "Level4") {
+					print ("Loading Level 5!");
+					nextLevel = "Level5";
+					WinText ();
+					StartCoroutine (LevelTransitionWait ());
+				}
+			} else {
+				StartCoroutine (NotFinished ());
 			}
 		}
 		// TODO Not working. Player position does not follow ground
 		else if (col.gameObject.tag == "Moving Ground") {
 
-				isJumping = false;
-				transform.parent = col.transform;
+			isJumping = false;
+			transform.parent = col.transform;
 
-			}
+		}
 		// Tests for when player falls off map
 		else if (col.gameObject.tag == "Death Box") 
 		{
@@ -144,25 +178,32 @@ public class PlayerController : MonoBehaviour
 		}
 
 	}
-		
+
 	IEnumerator SpeedUp() { // Called when player achieves a speed up power up
 		playerSpeed = 0.125f;
 		yield return new WaitForSeconds(5.0f);
 		playerSpeed = 0.085f;
 	}
 
-	IEnumerator EndGame() { // Called when player completed level
-		yield return new WaitForSeconds(1.0f);
-		this.gameObject.SetActive (false);
-		WinText ();
+	IEnumerator LevelTransitionWait() {
+		print ("Transition Wait: " + nextLevel);
+		yield return new WaitForSeconds(2.0f);
+		Application.LoadLevel (nextLevel);
 	}
 
-	IEnumerator OnDeath() { // Called when player dies
 
+	IEnumerator OnDeath() { // Called when player dies
 		gameOver.Play ();
 		yield return new WaitForSeconds(0.5f);
 
 		Application.LoadLevel (2);
+
+	}
+	IEnumerator NotFinished() { // Called if player hasn't collected all classes
+
+		endGame.text = "You haven't passed all your classes!";
+		yield return new WaitForSeconds(2f);
+		endGame.text = "";
 
 	}
 }
