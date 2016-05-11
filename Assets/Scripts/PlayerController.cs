@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
 		animator = this.GetComponent<Animator>();
 
 		endGame.text = "";
-		diplomaCount.text = "Classes Taken: " + count + "/5";
+		diplomaCount.text = "Classes Needed: " + (5 - count);
 
 
 	}
@@ -91,7 +91,7 @@ public class PlayerController : MonoBehaviour
 			CountText ();
 		}
 
-		// Tests for collision with End Game objects
+		// Tests for collision with End Game objects (level complete)
 		else if (col.gameObject.tag == "End Game") {
 			if (count == 5) {
 				StartCoroutine (EndGame ());
@@ -105,6 +105,7 @@ public class PlayerController : MonoBehaviour
 				transform.parent = col.transform;
 
 			}
+		// Tests for when player falls off map
 		else if (col.gameObject.tag == "Death Box") 
 		{
 			StartCoroutine (OnDeath ());
@@ -118,31 +119,38 @@ public class PlayerController : MonoBehaviour
 	}
 
 
-	void WinText()
+	void WinText() // Sets text when player wins level
 	{
 		endGame.text = "We did it!";
 	}
 
-	void CountText ()
+	void CountText () // Sets text when player collects diploma
 	{
-		diplomaCount.text = "Classes Taken: " + count + "/5";
-	}
+		if (count < 5) {
+			diplomaCount.text = "Classes Needed: " + (5 - count);
+		} else {
+			diplomaCount.text = "Done! Now go graduate to the next year.";
+		}
 
-	// Gives player a 5 second speed boost
-	IEnumerator SpeedUp() {
+	}
+		
+	IEnumerator SpeedUp() { // Called when player achieves a speed up power up
 		playerSpeed = 0.125f;
 		yield return new WaitForSeconds(5.0f);
 		playerSpeed = 0.085f;
 	}
 
-	IEnumerator EndGame() {
+	IEnumerator EndGame() { // Called when player completed level
 		yield return new WaitForSeconds(1.0f);
 		this.gameObject.SetActive (false);
 		WinText ();
 	}
 
-	IEnumerator OnDeath() {
+	IEnumerator OnDeath() { // Called when player dies
+		Destroy (this);
 		yield return new WaitForSeconds(0.5f);
+
 		Application.LoadLevel (2);
+
 	}
 }
