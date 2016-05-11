@@ -97,6 +97,8 @@ public class PlayerController : MonoBehaviour
 			if (count == 5) {
 				StartCoroutine (EndGame ());
 
+			} else {
+				StartCoroutine (NotFinished ());
 			}
 		}
 		// TODO Not working. Player position does not follow ground
@@ -152,6 +154,13 @@ public class PlayerController : MonoBehaviour
 		yield return new WaitForSeconds(0.5f);
 
 		Application.LoadLevel (2);
+
+	}
+	IEnumerator NotFinished() { // Called if player hasn't collected all classes
+
+		endGame.text = "You haven't passed all your classes!";
+		yield return new WaitForSeconds(2f);
+		endGame.text = "";
 
 	}
 }
