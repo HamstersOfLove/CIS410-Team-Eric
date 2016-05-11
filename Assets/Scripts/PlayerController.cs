@@ -4,7 +4,7 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
-
+	
 	public Vector2 jumpHeight;
 	public Text endGame;
 	public Text diplomaCount;
@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
 	// Use this for initialization
 	void Start()
 	{
+
 		currentLevel = Application.loadedLevelName;
 
 		rb = GetComponent<Rigidbody2D> ();
@@ -29,6 +30,8 @@ public class PlayerController : MonoBehaviour
 
 		endGame.text = "";
 		diplomaCount.text = "Classes Needed: " + (5 - count);
+
+
 	}
 
 	// Update is called once per frame
@@ -59,12 +62,12 @@ public class PlayerController : MonoBehaviour
 			if (isJumping == false) { // --------------------- Checks for double jumps ---------
 				rb.AddForce (jumpHeight, ForceMode2D.Impulse);
 				isJumping = true;
+				GetComponent<AudioSource>().Play();
 			}
 
 		}
-
+	
 	}
-
 	// Player collision controls
 	void OnCollisionEnter2D(Collision2D col){
 
@@ -97,7 +100,7 @@ public class PlayerController : MonoBehaviour
 
 		// Tests for collision with End Game objects (level complete)
 		else if (col.gameObject.tag == "End Game") {
-			if (count == 1) {
+			if (count == 5) {
 				StartCoroutine (EndGame ());
 
 				if (currentLevel == "AdventuresOfEric") {
@@ -123,10 +126,10 @@ public class PlayerController : MonoBehaviour
 		// TODO Not working. Player position does not follow ground
 		else if (col.gameObject.tag == "Moving Ground") {
 
-			isJumping = false;
-			transform.parent = col.transform;
+				isJumping = false;
+				transform.parent = col.transform;
 
-		}
+			}
 		// Tests for when player falls off map
 		else if (col.gameObject.tag == "Death Box") 
 		{
@@ -155,7 +158,7 @@ public class PlayerController : MonoBehaviour
 		}
 
 	}
-
+		
 	IEnumerator SpeedUp() { // Called when player achieves a speed up power up
 		playerSpeed = 0.125f;
 		yield return new WaitForSeconds(5.0f);
@@ -174,8 +177,9 @@ public class PlayerController : MonoBehaviour
 		Application.LoadLevel (nextLevel);
 	}
 
+
 	IEnumerator OnDeath() { // Called when player dies
-		Destroy (this);
+		
 		yield return new WaitForSeconds(0.5f);
 
 		Application.LoadLevel (2);
