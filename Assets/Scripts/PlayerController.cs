@@ -100,7 +100,7 @@ public class PlayerController : MonoBehaviour
 
 		// Tests for collision with End Game objects (level complete)
 		else if (col.gameObject.tag == "End Game") {
-			if (count == 0) {
+			if (count == 5) {
 
 				if (currentLevel == "AdventuresOfEric") {
 					print ("Loading Level 2!");
@@ -169,7 +169,7 @@ public class PlayerController : MonoBehaviour
 		playerSpeed = 0.085f;
 	}
 
-	IEnumerator LevelTransitionWait() {
+	IEnumerator LevelTransitionWait() { // Transistions to next scene
 		print ("Transition Wait: " + nextLevel);
 		yield return new WaitForSeconds(2.0f);
 		Application.LoadLevel (nextLevel);
