@@ -103,10 +103,10 @@ public class PlayerController : MonoBehaviour
 			if (count == 5) {
 				StartCoroutine (EndGame ());
 
-<<<<<<< HEAD
+
 			} else {
 				StartCoroutine (NotFinished ());
-=======
+
 				if (currentLevel == "AdventuresOfEric") {
 					print ("Loading Level 2!");
 					nextLevel = "Level2";
@@ -124,8 +124,6 @@ public class PlayerController : MonoBehaviour
 					nextLevel = "Level5";
 					StartCoroutine (LevelTransitionWait());
 				}
-
->>>>>>> 2bcdd0b4523200341b5394e75b1cfd7533cb4752
 			}
 		}
 		// TODO Not working. Player position does not follow ground
