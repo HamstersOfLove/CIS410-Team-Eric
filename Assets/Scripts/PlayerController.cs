@@ -105,8 +105,35 @@ public class PlayerController : MonoBehaviour
 		// Tests for collision with End Game objects (level complete)
 		else if (col.gameObject.tag == "End Game") {
 			if (count == 5) {
+<<<<<<< HEAD
 				StartCoroutine (EndGame ());
 
+=======
+
+				if (currentLevel == "AdventuresOfEric") {
+					print ("Loading Level 2!");
+					nextLevel = "Level2";
+					WinText ();
+					StartCoroutine (LevelTransitionWait ());
+				} else if (currentLevel == "Level2") {
+					print ("Loading Level 3!");
+					nextLevel = "Level3";
+					WinText ();
+					StartCoroutine (LevelTransitionWait ());
+				} else if (currentLevel == "Level3") {
+					print ("Loading Level 4!");
+					nextLevel = "Level4";
+					WinText ();
+					StartCoroutine (LevelTransitionWait ());
+				} else if (currentLevel == "Level4") {
+					print ("Loading Level 5!");
+					nextLevel = "Level5";
+					WinText ();
+					StartCoroutine (LevelTransitionWait ());
+				}
+			} else {
+				StartCoroutine (NotFinished ());
+>>>>>>> 1c66c32dc98a521b32c077e2107a980644527d32
 			}
 		}
 		// TODO Not working. Player position does not follow ground
@@ -151,10 +178,17 @@ public class PlayerController : MonoBehaviour
 		playerSpeed = 0.085f;
 	}
 
+<<<<<<< HEAD
 	IEnumerator EndGame() { // Called when player completed level
 		yield return new WaitForSeconds(1.0f);
 		this.gameObject.SetActive (false);
 		WinText ();
+=======
+	IEnumerator LevelTransitionWait() { // Transistions to next scene
+		print ("Transition Wait: " + nextLevel);
+		yield return new WaitForSeconds(2.0f);
+		Application.LoadLevel (nextLevel);
+>>>>>>> 1c66c32dc98a521b32c077e2107a980644527d32
 	}
 
 	IEnumerator OnDeath() { // Called when player dies
