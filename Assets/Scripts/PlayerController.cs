@@ -16,11 +16,21 @@ public class PlayerController : MonoBehaviour
 	private float playerSpeed = 0.085f;
 	private bool isJumping = false;
 
+	public AudioSource[] sounds;
+	private AudioSource jump, powerUP, scrollPickUp, gameOver;
+
+
 	// Use this for initialization
 	void Start()
 	{
 		rb = GetComponent<Rigidbody2D> ();
 		animator = this.GetComponent<Animator>();
+
+		sounds = this.GetComponents<AudioSource>();
+		jump = sounds [0];
+		powerUP = sounds [1];
+		scrollPickUp = sounds [2];
+		gameOver = sounds [3];
 
 		endGame.text = "";
 		diplomaCount.text = "Classes Needed: " + (5 - count);
@@ -56,7 +66,7 @@ public class PlayerController : MonoBehaviour
 			if (isJumping == false) { // --------------------- Checks for double jumps ---------
 				rb.AddForce (jumpHeight, ForceMode2D.Impulse);
 				isJumping = true;
-				GetComponent<AudioSource>().Play();
+				jump.Play();
 			}
 
 		}
@@ -80,14 +90,14 @@ public class PlayerController : MonoBehaviour
 		// Tests for collision with Coffee tagged objects
 		else if (col.gameObject.tag == "Coffee") {
 			col.gameObject.SetActive (false);
-
+			powerUP.Play ();
 			StartCoroutine (SpeedUp ());
 		}
 
 		// Tests for collision with Diploma tagged objects
 		else if (col.gameObject.tag == "Diploma") {
 			col.gameObject.SetActive (false);
-
+			scrollPickUp.Play ();
 			count += 1;
 			CountText ();
 		}
@@ -148,7 +158,8 @@ public class PlayerController : MonoBehaviour
 	}
 
 	IEnumerator OnDeath() { // Called when player dies
-		
+
+		gameOver.Play ();
 		yield return new WaitForSeconds(0.5f);
 
 		Application.LoadLevel (2);
