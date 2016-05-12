@@ -86,10 +86,15 @@ public class PlayerController : MonoBehaviour
 	}
 	// Player collision controls
 	void OnCollisionEnter2D(Collision2D col){
-
+		print (col.gameObject.tag);
 		// Tests for collision with Ground tagged objects
 		if (col.gameObject.tag == "Ground") {
 			isJumping = false;
+		}
+
+		else if (col.gameObject.tag == "Scroll") {
+			col.gameObject.SetActive (false);
+			endGame.text = "YOU GRADUATED!";
 		}
 
 		// Tests for collision with Enemy tagged objects
@@ -138,11 +143,17 @@ public class PlayerController : MonoBehaviour
 					nextLevel = "Level5";
 					WinText ();
 					StartCoroutine (LevelTransitionWait ());
+				} else if (currentLevel == "Level5") {
+					print ("Graduation Day!!!");
+					nextLevel = "GraduationDay";
+					WinText ();
+					StartCoroutine (LevelTransitionWait ());
 				}
 			} else {
 				StartCoroutine (NotFinished ());
 			}
 		}
+
 		// TODO Not working. Player position does not follow ground
 		else if (col.gameObject.tag == "Moving Ground") {
 
@@ -150,12 +161,14 @@ public class PlayerController : MonoBehaviour
 			transform.parent = col.transform;
 
 		}
+
 		// Tests for when player falls off map
-		else if (col.gameObject.tag == "Death Box") 
-		{
+		else if (col.gameObject.tag == "Death Box") {
 			StartCoroutine (OnDeath ());
-		}
+		} 
+
 	}
+
 	void OnCollisionExit2D(Collision2D col)
 	{
 		if (col.gameObject.tag == "Moving Ground") {
