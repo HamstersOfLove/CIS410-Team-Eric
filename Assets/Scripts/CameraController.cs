@@ -11,7 +11,7 @@ public class CameraController : MonoBehaviour {
 
 
 	// Use this for initialization
-	void Awake() {
+	void Start() {
 		offset = transform.position - player.transform.position;
 		height = this.gameObject.transform.position.y;
 	}
