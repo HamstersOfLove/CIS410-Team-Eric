@@ -90,7 +90,7 @@ public class PlayerController : MonoBehaviour
 		}
 
 		if (col.gameObject.tag == "Scroll") {
-			endGame.text = "Congrats! You've Graduated!";
+			endGame.text = "Congrats! Eric, You've Graduated!";
 			col.gameObject.SetActive (false);
 		}
 
