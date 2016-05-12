@@ -83,10 +83,7 @@ public class PlayerController : MonoBehaviour
 
 	// Player collision controls
 	void OnCollisionEnter2D(Collision2D col){
-<<<<<<< HEAD
-=======
 
->>>>>>> fc597b9e49d7d3c03f26c5b86fef7efc22d9704f
 		// Tests for collision with Ground tagged objects
 		if (col.gameObject.tag == "Ground") {
 			isJumping = false;
