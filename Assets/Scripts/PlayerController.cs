@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
 	private Animator animator;
 	private Rigidbody2D rb;
 	private int count = 0;
-	private float playerSpeed = 0.085f;
+	private float playerSpeed = 0.065f;
 	private bool isJumping = false;
 
 	private string currentLevel;
@@ -86,10 +86,15 @@ public class PlayerController : MonoBehaviour
 	}
 	// Player collision controls
 	void OnCollisionEnter2D(Collision2D col){
-
+		print (col.gameObject.tag);
 		// Tests for collision with Ground tagged objects
 		if (col.gameObject.tag == "Ground") {
 			isJumping = false;
+		}
+
+		else if (col.gameObject.tag == "Scroll") {
+			col.gameObject.SetActive (false);
+			endGame.text = "YOU GRADUATED!";
 		}
 
 		// Tests for collision with Enemy tagged objects
@@ -138,11 +143,17 @@ public class PlayerController : MonoBehaviour
 					nextLevel = "Level5";
 					WinText ();
 					StartCoroutine (LevelTransitionWait ());
+				} else if (currentLevel == "Level5") {
+					print ("Graduation Day!!!");
+					nextLevel = "GraduationDay";
+					WinText ();
+					StartCoroutine (LevelTransitionWait ());
 				}
 			} else {
 				StartCoroutine (NotFinished ());
 			}
 		}
+
 		// TODO Not working. Player position does not follow ground
 		else if (col.gameObject.tag == "Moving Ground") {
 
@@ -150,12 +161,14 @@ public class PlayerController : MonoBehaviour
 			transform.parent = col.transform;
 
 		}
+
 		// Tests for when player falls off map
-		else if (col.gameObject.tag == "Death Box") 
-		{
+		else if (col.gameObject.tag == "Death Box") {
 			StartCoroutine (OnDeath ());
-		}
+		} 
+
 	}
+
 	void OnCollisionExit2D(Collision2D col)
 	{
 		if (col.gameObject.tag == "Moving Ground") {
@@ -180,9 +193,9 @@ public class PlayerController : MonoBehaviour
 	}
 
 	IEnumerator SpeedUp() { // Called when player achieves a speed up power up
-		playerSpeed = 0.125f;
+		playerSpeed = 0.095f;
 		yield return new WaitForSeconds(5.0f);
-		playerSpeed = 0.085f;
+		playerSpeed = 0.065f;
 	}
 
 	IEnumerator LevelTransitionWait() {
@@ -195,8 +208,7 @@ public class PlayerController : MonoBehaviour
 	IEnumerator OnDeath() { // Called when player dies
 		gameOver.Play ();
 		yield return new WaitForSeconds(0.5f);
-
-		Application.LoadLevel (2);
+		Application.LoadLevel ("Gameover");
 
 	}
 	IEnumerator NotFinished() { // Called if player hasn't collected all classes
