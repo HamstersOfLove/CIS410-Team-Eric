@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
 	private Animator animator;
 	private Rigidbody2D rb;
 	private int count = 0;
-	private float playerSpeed = 0.065f;
+	private float playerSpeed = 0.08f;
 	private bool isJumping = false;
 
 	private string currentLevel;
@@ -186,9 +186,9 @@ public class PlayerController : MonoBehaviour
 	}
 
 	IEnumerator SpeedUp() { // Called when player achieves a speed up power up
-		playerSpeed = 0.095f;
+		playerSpeed = 0.115f;
 		yield return new WaitForSeconds(5.0f);
-		playerSpeed = 0.065f;
+		playerSpeed = 0.08f;
 	}
 
 	IEnumerator LevelTransitionWait() {
