@@ -43,7 +43,6 @@ public class PlayerController : MonoBehaviour
 		powerUP = sounds [1];
 		scrollPickUp = sounds [2];
 		gameOver = sounds [3];
-
 		endGame.text = "";
 		diplomaCount.text = "Classes Needed: " + (5 - count);
 	}
@@ -118,7 +117,7 @@ public class PlayerController : MonoBehaviour
 
 		// Tests for collision with End Game objects (level complete)
 		else if (col.gameObject.tag == "End Game") {
-			if (count > 0) {
+			if (count == 5) {
 
 				if (currentLevel == "AdventuresOfEric") {
 					print ("Loading Level 2!");
@@ -165,7 +164,6 @@ public class PlayerController : MonoBehaviour
 	}
 
 	void OnCollisionExit2D(Collision2D col) {
-		print (col.gameObject.tag);
 		if (col.gameObject.tag == "Moving Ground") {
 			transform.parent = null;
 		}
