@@ -46,8 +46,6 @@ public class PlayerController : MonoBehaviour
 
 		endGame.text = "";
 		diplomaCount.text = "Classes Needed: " + (5 - count);
-
-
 	}
 
 	// Update is called once per frame
@@ -68,9 +66,9 @@ public class PlayerController : MonoBehaviour
 			animator.SetInteger ("Direction", 1);
 			animator.speed = 1;
 
+
 		} else { // ------------------------------- Stops animation if no key is being held down ---
 			animator.speed = 0;
-
 		} 
 
 		//Jump
@@ -80,21 +78,20 @@ public class PlayerController : MonoBehaviour
 				isJumping = true;
 				jump.Play();
 			}
-
 		}
-
 	}
+
 	// Player collision controls
 	void OnCollisionEnter2D(Collision2D col){
-		print (col.gameObject.tag);
+
 		// Tests for collision with Ground tagged objects
 		if (col.gameObject.tag == "Ground") {
 			isJumping = false;
 		}
 
-		else if (col.gameObject.tag == "Scroll") {
+		if (col.gameObject.tag == "Scroll") {
+			endGame.text = "Congrats! You've Graduated!";
 			col.gameObject.SetActive (false);
-			endGame.text = "YOU GRADUATED!";
 		}
 
 		// Tests for collision with Enemy tagged objects
@@ -156,10 +153,8 @@ public class PlayerController : MonoBehaviour
 
 		// TODO Not working. Player position does not follow ground
 		else if (col.gameObject.tag == "Moving Ground") {
-
 			isJumping = false;
 			transform.parent = col.transform;
-
 		}
 
 		// Tests for when player falls off map
@@ -169,8 +164,8 @@ public class PlayerController : MonoBehaviour
 
 	}
 
-	void OnCollisionExit2D(Collision2D col)
-	{
+	void OnCollisionExit2D(Collision2D col) {
+		print (col.gameObject.tag);
 		if (col.gameObject.tag == "Moving Ground") {
 			transform.parent = null;
 		}
