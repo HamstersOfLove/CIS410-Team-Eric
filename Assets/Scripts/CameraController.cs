@@ -6,11 +6,10 @@ public class CameraController : MonoBehaviour {
 	public GameObject player;
 
 	private float height;
-	private Vector3 offset;
 
 	// Use this for initialization
 	void Start() {
-		offset = transform.position - player.transform.position;
+
 		height = this.gameObject.transform.position.y;
 	}
 	
