@@ -1,14 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour {
 
 	public string prevLevel;
 
-	void Awake() {
-		DontDestroyOnLoad(transform.gameObject);
-	}
-	 
 	// Use this for initialization
 	void Start () {
 		prevLevel = PlayerController.currentScene;
@@ -17,12 +14,12 @@ public class LevelManager : MonoBehaviour {
 
 	public void LoadLast()
 	{
-		Application.LoadLevel (prevLevel);
+		SceneManager.LoadScene(prevLevel, LoadSceneMode.Single);
 	}
 
 
 	public void LoadScene(string name) {
-		Application.LoadLevel (name);
+		SceneManager.LoadScene(name, LoadSceneMode.Single);
 	}
 
 	public void QuitGame(){
