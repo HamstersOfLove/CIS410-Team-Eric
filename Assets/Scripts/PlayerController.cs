@@ -120,7 +120,7 @@ public class PlayerController : MonoBehaviour
 
 		// Tests for collision with End Game objects (level complete)
 		else if (col.gameObject.tag == "End Game") {
-			if (count == 5) {
+			if (count > 0) {
 
 				if (currentLevel == "AdventuresOfEric") {
 
@@ -139,13 +139,8 @@ public class PlayerController : MonoBehaviour
 					StartCoroutine (LevelTransitionWait ());
 				} else if (currentLevel == "Level4") {
 
-					nextLevel = "Level5";
-					endGame.text = "That's what you get when you only take 5 classes a year! Super Senior!!";
-					StartCoroutine (LevelTransitionWait ());
-				} else if (currentLevel == "Level5") {
-
 					nextLevel = "GraduationDay";
-					endGame.text = "Graduation OMGOMGOMG FINALLY!";
+					endGame.text = "Eric! You've done it!!! You're a Wizard!";
 					StartCoroutine (LevelTransitionWait ());
 				}
 			} else {
@@ -178,7 +173,7 @@ public class PlayerController : MonoBehaviour
 
 	void CountText () // Sets text when player collects diploma
 	{
-		if (count < 5) {
+		if (count > 0) {
 			diplomaCount.text = count + "/5";
 		} else {
 			diplomaCount.text = "Done!";
