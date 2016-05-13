@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C85AD0AE-7508-BF61-1336-AC254F825498}</ProjectGuid>
+    <ProjectGuid>{EA716C33-9B7C-BA04-0B03-50D0698B37E2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -48,6 +48,9 @@
      <Compile Include="Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
      <None Include="Assets\Textures\RainMaker\Prefab\RainShader.shader" />
      <None Include="Assets\Textures\RainMaker\Readme.txt" />
+ <Reference Include="Assembly-UnityScript">
+ <HintPath>/Users/Josh/Documents/CIS 410/The Adventures of Eric/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
@@ -81,7 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{4C5C3779-F4B6-934E-BD4D-0DA7A82956C4}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{5AB7F7CF-3C6F-33D9-33E7-0440BA899F12}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
