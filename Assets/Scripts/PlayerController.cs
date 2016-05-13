@@ -199,8 +199,6 @@ public class PlayerController : MonoBehaviour
 		} else if (currentLevel == "Level4") {
 			endGame.text = "Seniors Babbbyyyyyy";
 
-		} else if (currentLevel == "Level5") {
-			endGame.text = "Sigh...Super Seniors....!";
 		}
 		else if (currentLevel == "GraduationDay") {
 		endGame.text = "Graduation Day!!!!";
