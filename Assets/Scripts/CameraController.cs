@@ -7,8 +7,6 @@ public class CameraController : MonoBehaviour {
 
 	private float height;
 	private Vector3 offset;
-	Camera cam = Camera.main;
-
 
 	// Use this for initialization
 	void Start() {

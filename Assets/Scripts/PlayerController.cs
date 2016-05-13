@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -20,19 +21,19 @@ public class PlayerController : MonoBehaviour
 
 	private string currentLevel;
 	private string nextLevel;
+	private Scene active;
 
 	public AudioSource[] sounds;
 	private AudioSource jump, powerUP, scrollPickUp, gameOver;
-
-	void Awake() {
-		DontDestroyOnLoad(transform.gameObject);
-	}
 
 	// Use this for initialization
 	void Start()
 	{
 
-		currentLevel = Application.loadedLevelName;
+		active = SceneManager.GetActiveScene ();
+		currentLevel = active.name;
+
+
 		currentScene = currentLevel;
 
 		rb = GetComponent<Rigidbody2D> ();
@@ -122,27 +123,27 @@ public class PlayerController : MonoBehaviour
 			if (count == 5) {
 
 				if (currentLevel == "AdventuresOfEric") {
-					print ("Loading Level 2!");
+
 					nextLevel = "Level2";
 					endGame.text = "On To Sophomore Year!";
 					StartCoroutine (LevelTransitionWait ());
 				} else if (currentLevel == "Level2") {
-					print ("Loading Level 3!");
+
 					nextLevel = "Level3";
 					endGame.text = "Whew! That wasn't so bad! On to Junior Year!";
 					StartCoroutine (LevelTransitionWait ());
 				} else if (currentLevel == "Level3") {
-					print ("Loading Level 4!");
+
 					nextLevel = "Level4";
 					endGame.text = "Still another year to go?! Senior Year, here we come..";
 					StartCoroutine (LevelTransitionWait ());
 				} else if (currentLevel == "Level4") {
-					print ("Loading Level 5!");
+
 					nextLevel = "Level5";
 					endGame.text = "That's what you get when you only take 5 classes a year! Super Senior!!";
 					StartCoroutine (LevelTransitionWait ());
 				} else if (currentLevel == "Level5") {
-					print ("Graduation Day!!!");
+
 					nextLevel = "GraduationDay";
 					endGame.text = "Graduation OMGOMGOMG FINALLY!";
 					StartCoroutine (LevelTransitionWait ());
@@ -180,7 +181,7 @@ public class PlayerController : MonoBehaviour
 		if (count < 5) {
 			diplomaCount.text = count + "/5";
 		} else {
-			diplomaCount.text = "Done! Now go graduate to the next year.";
+			diplomaCount.text = "Done!";
 		}
 
 	}
@@ -215,16 +216,16 @@ public class PlayerController : MonoBehaviour
 	}
 
 	IEnumerator LevelTransitionWait() {
-		print ("Transition Wait: " + nextLevel);
 		yield return new WaitForSeconds(2.0f);
-		Application.LoadLevel (nextLevel);
+		SceneManager.LoadScene(nextLevel, LoadSceneMode.Single);
 	}
 
 
 	IEnumerator OnDeath() { // Called when player dies
 		gameOver.Play ();
 		yield return new WaitForSeconds(0.5f);
-		Application.LoadLevel ("Gameover");
+		SceneManager.LoadScene("Gameover", LoadSceneMode.Single);
+
 
 	}
 	IEnumerator NotFinished() { // Called if player hasn't collected all classes
