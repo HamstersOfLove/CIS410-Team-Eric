@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
 	private Animator animator;
 	private Rigidbody2D rb;
 	private int count = 0;
-	private float playerSpeed = 0.065f;
+	private float playerSpeed = 0.08f;
 	private bool isJumping = false;
 
 	private string currentLevel;
@@ -44,8 +44,9 @@ public class PlayerController : MonoBehaviour
 		scrollPickUp = sounds [2];
 		gameOver = sounds [3];
 
-		endGame.text = "";
-		diplomaCount.text = "Classes Needed: " + (5 - count);
+
+		StartCoroutine (BeginningText ());
+		diplomaCount.text = count + "/5";
 	}
 
 	// Update is called once per frame
@@ -118,32 +119,32 @@ public class PlayerController : MonoBehaviour
 
 		// Tests for collision with End Game objects (level complete)
 		else if (col.gameObject.tag == "End Game") {
-			if (count > 0) {
+			if (count == 5) {
 
 				if (currentLevel == "AdventuresOfEric") {
 					print ("Loading Level 2!");
 					nextLevel = "Level2";
-					WinText ();
+					endGame.text = "On To Sophomore Year!";
 					StartCoroutine (LevelTransitionWait ());
 				} else if (currentLevel == "Level2") {
 					print ("Loading Level 3!");
 					nextLevel = "Level3";
-					WinText ();
+					endGame.text = "Whew! That wasn't so bad! On to Junior Year!";
 					StartCoroutine (LevelTransitionWait ());
 				} else if (currentLevel == "Level3") {
 					print ("Loading Level 4!");
 					nextLevel = "Level4";
-					WinText ();
+					endGame.text = "Still another year to go?! Senior Year, here we come..";
 					StartCoroutine (LevelTransitionWait ());
 				} else if (currentLevel == "Level4") {
 					print ("Loading Level 5!");
 					nextLevel = "Level5";
-					WinText ();
+					endGame.text = "That's what you get when you only take 5 classes a year! Super Senior!!";
 					StartCoroutine (LevelTransitionWait ());
 				} else if (currentLevel == "Level5") {
 					print ("Graduation Day!!!");
 					nextLevel = "GraduationDay";
-					WinText ();
+					endGame.text = "Graduation OMGOMGOMG FINALLY!";
 					StartCoroutine (LevelTransitionWait ());
 				}
 			} else {
@@ -165,32 +166,52 @@ public class PlayerController : MonoBehaviour
 	}
 
 	void OnCollisionExit2D(Collision2D col) {
-		print (col.gameObject.tag);
 		if (col.gameObject.tag == "Moving Ground") {
 			transform.parent = null;
 		}
 	}
 
 
-	void WinText() // Sets text when player wins level
-	{
-		endGame.text = "We did it!";
-	}
+		
+	
 
 	void CountText () // Sets text when player collects diploma
 	{
 		if (count < 5) {
-			diplomaCount.text = "Classes Needed: " + (5 - count);
+			diplomaCount.text = count + "/5";
 		} else {
 			diplomaCount.text = "Done! Now go graduate to the next year.";
 		}
 
 	}
 
+	IEnumerator BeginningText() { // Called when player achieves a speed up power up
+		if (currentLevel == "AdventuresOfEric") {
+			endGame.text = "Freshman! Freshman! Freshman!";
+
+		} else if (currentLevel == "Level2") {
+			endGame.text = "Sophomoressss!";
+
+		} else if (currentLevel == "Level3") {
+			endGame.text = "Junior Year!!!";
+
+		} else if (currentLevel == "Level4") {
+			endGame.text = "Seniors Babbbyyyyyy";
+
+		} else if (currentLevel == "Level5") {
+			endGame.text = "Sigh...Super Seniors....!";
+		}
+		else if (currentLevel == "GraduationDay") {
+		endGame.text = "Graduation Day!!!!";
+		}
+		yield return new WaitForSeconds(3.0f);
+		endGame.text = "";
+	}
+
 	IEnumerator SpeedUp() { // Called when player achieves a speed up power up
-		playerSpeed = 0.095f;
+		playerSpeed = 0.115f;
 		yield return new WaitForSeconds(5.0f);
-		playerSpeed = 0.065f;
+		playerSpeed = 0.08f;
 	}
 
 	IEnumerator LevelTransitionWait() {
