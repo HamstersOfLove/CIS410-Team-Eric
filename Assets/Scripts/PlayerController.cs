@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
 	private int sCount = 0;
 	private float playerSpeed = 0.08f;
 	private bool isJumping = false;
+	private bool isDead = false;
 
 	private string currentLevel;
 	private string nextLevel;
@@ -50,7 +51,7 @@ public class PlayerController : MonoBehaviour
 
 
 		StartCoroutine (BeginningText ());
-		diplomaCount.text = "Classes Left: " + count + "/5";
+		diplomaCount.text = "Classes Taken: " + count + "/5";
 		speedupCount.text = "Speed Boost: " + sCount;
 
 	}
@@ -60,36 +61,39 @@ public class PlayerController : MonoBehaviour
 	{
 		//----------------- Player Movement -----------------
 		//Left/Right
-		if (Input.GetKey (KeyCode.RightArrow)) { // -------------------------  Right Movement ---
-			transform.Translate(Vector2.right * playerSpeed);
 
-			animator.SetInteger ("Direction", 0);
-			animator.speed = 1;
+		if (!isDead) {
+			if (Input.GetKey (KeyCode.RightArrow)) { // -------------------------  Right Movement ---
+				transform.Translate (Vector2.right * playerSpeed);
 
-
-		} else if (Input.GetKey (KeyCode.LeftArrow)) { // -------------------  Left Movement ----
-			transform.Translate(Vector2.left * playerSpeed);
-
-			animator.SetInteger ("Direction", 1);
-			animator.speed = 1;
+				animator.SetInteger ("Direction", 0);
+				animator.speed = 1;
 
 
-		} else { // ------------------------------- Stops animation if no key is being held down ---
-			animator.speed = 0;
-		} 
+			} else if (Input.GetKey (KeyCode.LeftArrow)) { // -------------------  Left Movement ----
+				transform.Translate (Vector2.left * playerSpeed);
 
-		//Jump
-		if (Input.GetKeyDown (KeyCode.Space)) {
-			if (isJumping == false) { // --------------------- Checks for double jumps ---------
-				rb.AddForce (jumpHeight, ForceMode2D.Impulse);
-				isJumping = true;
-				jump.Play ();
-			}
-		} else if (Input.GetKeyDown (KeyCode.S)) {
-			if (sCount > 0) {
-				sCount -= 1;
-				speedupCount.text = "Speed Boost: " + sCount;
-				StartCoroutine (SpeedUp ());
+				animator.SetInteger ("Direction", 1);
+				animator.speed = 1;
+
+
+			} else { // ------------------------------- Stops animation if no key is being held down ---
+				animator.speed = 0;
+			} 
+
+			//Jump
+			if (Input.GetKeyDown (KeyCode.Space)) {
+				if (isJumping == false) { // --------------------- Checks for double jumps ---------
+					rb.AddForce (jumpHeight, ForceMode2D.Impulse);
+					isJumping = true;
+					jump.Play ();
+				}
+			} else if (Input.GetKeyDown (KeyCode.S)) {
+				if (sCount > 0) {
+					sCount -= 1;
+					speedupCount.text = "Speed Boost: " + sCount;
+					StartCoroutine (SpeedUp ());
+				}
 			}
 		}
 	}
@@ -102,34 +106,7 @@ public class PlayerController : MonoBehaviour
 			isJumping = false;
 		}
 
-		if (col.gameObject.tag == "Scroll") {
-			endGame.text = "Congrats! Eric, You've Graduated!";
-			col.gameObject.SetActive (false);
-		}
 
-		// Tests for collision with Enemy tagged objects
-		else if (col.gameObject.tag == "Enemy") {
-			animator.SetInteger ("Direction", 2);
-			StartCoroutine (OnDeath ());
-			//animator.speed = 0;
-		}
-
-		// Tests for collision with Coffee tagged objects
-		else if (col.gameObject.tag == "Coffee") {
-			col.gameObject.SetActive (false);
-			sCount += 1;
-			speedupCount.text = "Speed Boost: " + sCount;
-			powerUP.Play ();
-
-		}
-
-		// Tests for collision with Diploma tagged objects
-		else if (col.gameObject.tag == "Diploma") {
-			col.gameObject.SetActive (false);
-			scrollPickUp.Play ();
-			count += 1;
-			CountText ();
-		}
 
 		// Tests for collision with End Game objects (level complete)
 		else if (col.gameObject.tag == "End Game") {
@@ -160,8 +137,7 @@ public class PlayerController : MonoBehaviour
 				StartCoroutine (NotFinished ());
 			}
 		}
-
-		// TODO Not working. Player position does not follow ground
+			
 		else if (col.gameObject.tag == "Moving Ground") {
 			isJumping = false;
 			transform.parent = col.transform;
@@ -183,11 +159,40 @@ public class PlayerController : MonoBehaviour
 
 		
 	
+	void OnTriggerEnter2D(Collider2D col){
+		if (col.gameObject.tag == "Scroll") {
+			endGame.text = "Congrats! Eric, You've Graduated!";
+			col.gameObject.SetActive (false);
+		}
 
+		// Tests for collision with Enemy tagged objects
+		else if (col.gameObject.tag == "Enemy") {
+			
+			StartCoroutine (OnDeath ());
+			//animator.speed = 0;
+		}
+
+		// Tests for collision with Coffee tagged objects
+		else if (col.gameObject.tag == "Coffee") {
+			col.gameObject.SetActive (false);
+			sCount += 1;
+			speedupCount.text = "Speed Boost: " + sCount;
+			powerUP.Play ();
+
+		}
+
+		// Tests for collision with Diploma tagged objects
+		else if (col.gameObject.tag == "Diploma") {
+			col.gameObject.SetActive (false);
+			scrollPickUp.Play ();
+			count += 1;
+			CountText ();
+		}
+	}
 	void CountText () // Sets text when player collects diploma
 	{
 		if (count > 0) {
-			diplomaCount.text = "Classes Left: " + count + "/5";
+			diplomaCount.text = "Classes Taken: " + count + "/5";
 		} else {
 			diplomaCount.text = "Done!";
 		}
@@ -234,7 +239,12 @@ public class PlayerController : MonoBehaviour
 
 	IEnumerator OnDeath() { // Called when player dies
 		gameOver.Play ();
-		yield return new WaitForSeconds(0.5f);
+		isDead = true;
+		animator.SetInteger ("Direction", 2);
+		animator.speed = 1;
+		endGame.text = "Game Over!";
+		pushText.text = "";
+		yield return new WaitForSeconds(2.5f);
 		SceneManager.LoadScene("Gameover", LoadSceneMode.Single);
 
 
