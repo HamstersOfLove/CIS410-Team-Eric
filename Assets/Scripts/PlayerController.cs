@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -15,24 +16,24 @@ public class PlayerController : MonoBehaviour
 	private Animator animator;
 	private Rigidbody2D rb;
 	private int count = 0;
-	private float playerSpeed = 0.065f;
+	private float playerSpeed = 0.08f;
 	private bool isJumping = false;
 
 	private string currentLevel;
 	private string nextLevel;
+	private Scene active;
 
 	public AudioSource[] sounds;
 	private AudioSource jump, powerUP, scrollPickUp, gameOver;
-
-	void Awake() {
-		DontDestroyOnLoad(transform.gameObject);
-	}
 
 	// Use this for initialization
 	void Start()
 	{
 
-		currentLevel = Application.loadedLevelName;
+		active = SceneManager.GetActiveScene ();
+		currentLevel = active.name;
+
+
 		currentScene = currentLevel;
 
 		rb = GetComponent<Rigidbody2D> ();
@@ -43,8 +44,10 @@ public class PlayerController : MonoBehaviour
 		powerUP = sounds [1];
 		scrollPickUp = sounds [2];
 		gameOver = sounds [3];
-		endGame.text = "";
-		diplomaCount.text = "Classes Needed: " + (5 - count);
+
+
+		StartCoroutine (BeginningText ());
+		diplomaCount.text = count + "/5";
 	}
 
 	// Update is called once per frame
@@ -117,32 +120,27 @@ public class PlayerController : MonoBehaviour
 
 		// Tests for collision with End Game objects (level complete)
 		else if (col.gameObject.tag == "End Game") {
-			if (count == 5) {
+			if (count > 0) {
 
 				if (currentLevel == "AdventuresOfEric") {
-					print ("Loading Level 2!");
+
 					nextLevel = "Level2";
-					WinText ();
+					endGame.text = "On To Sophomore Year!";
 					StartCoroutine (LevelTransitionWait ());
 				} else if (currentLevel == "Level2") {
-					print ("Loading Level 3!");
+
 					nextLevel = "Level3";
-					WinText ();
+					endGame.text = "Whew! That wasn't so bad! On to Junior Year!";
 					StartCoroutine (LevelTransitionWait ());
 				} else if (currentLevel == "Level3") {
-					print ("Loading Level 4!");
+
 					nextLevel = "Level4";
-					WinText ();
+					endGame.text = "Still another year to go?! Senior Year, here we come..";
 					StartCoroutine (LevelTransitionWait ());
 				} else if (currentLevel == "Level4") {
-					print ("Loading Level 5!");
-					nextLevel = "Level5";
-					WinText ();
-					StartCoroutine (LevelTransitionWait ());
-				} else if (currentLevel == "Level5") {
-					print ("Graduation Day!!!");
+
 					nextLevel = "GraduationDay";
-					WinText ();
+					endGame.text = "Eric! You've done it!!! You're a Wizard!";
 					StartCoroutine (LevelTransitionWait ());
 				}
 			} else {
@@ -170,38 +168,57 @@ public class PlayerController : MonoBehaviour
 	}
 
 
-	void WinText() // Sets text when player wins level
-	{
-		endGame.text = "We did it!";
-	}
+		
+	
 
 	void CountText () // Sets text when player collects diploma
 	{
-		if (count < 5) {
-			diplomaCount.text = "Classes Needed: " + (5 - count);
+		if (count > 0) {
+			diplomaCount.text = count + "/5";
 		} else {
-			diplomaCount.text = "Done! Now go graduate to the next year.";
+			diplomaCount.text = "Done!";
 		}
 
 	}
 
+	IEnumerator BeginningText() { // Called when player achieves a speed up power up
+		if (currentLevel == "AdventuresOfEric") {
+			endGame.text = "Freshman! Freshman! Freshman!";
+
+		} else if (currentLevel == "Level2") {
+			endGame.text = "Sophomoressss!";
+
+		} else if (currentLevel == "Level3") {
+			endGame.text = "Junior Year!!!";
+
+		} else if (currentLevel == "Level4") {
+			endGame.text = "Seniors Babbbyyyyyy";
+
+		}
+		else if (currentLevel == "GraduationDay") {
+		endGame.text = "Graduation Day!!!!";
+		}
+		yield return new WaitForSeconds(3.0f);
+		endGame.text = "";
+	}
+
 	IEnumerator SpeedUp() { // Called when player achieves a speed up power up
-		playerSpeed = 0.095f;
+		playerSpeed = 0.115f;
 		yield return new WaitForSeconds(5.0f);
-		playerSpeed = 0.065f;
+		playerSpeed = 0.08f;
 	}
 
 	IEnumerator LevelTransitionWait() {
-		print ("Transition Wait: " + nextLevel);
 		yield return new WaitForSeconds(2.0f);
-		Application.LoadLevel (nextLevel);
+		SceneManager.LoadScene(nextLevel, LoadSceneMode.Single);
 	}
 
 
 	IEnumerator OnDeath() { // Called when player dies
 		gameOver.Play ();
 		yield return new WaitForSeconds(0.5f);
-		Application.LoadLevel ("Gameover");
+		SceneManager.LoadScene("Gameover", LoadSceneMode.Single);
+
 
 	}
 	IEnumerator NotFinished() { // Called if player hasn't collected all classes

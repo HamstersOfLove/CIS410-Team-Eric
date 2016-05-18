@@ -12,13 +12,11 @@ public class EnemyController : MonoBehaviour {
 	private bool dirRight = true;
 	private Animator animator;
 	private Animator playerAnimator;
-	private Rigidbody2D rb;
 
 
 	// Use this for initialization
 	void Start()
 	{
-		rb = GetComponent<Rigidbody2D> ();
 		animator = this.GetComponent<Animator>();
 
 	}
