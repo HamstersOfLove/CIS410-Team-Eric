@@ -11,11 +11,13 @@ public class PlayerController : MonoBehaviour
 	public Vector2 jumpHeight;
 	public Text endGame;
 	public Text diplomaCount;
+	public Text speedupCount;
 
 	private Vector3 movingGround;
 	private Animator animator;
 	private Rigidbody2D rb;
 	private int count = 0;
+	private int sCount = 0;
 	private float playerSpeed = 0.08f;
 	private bool isJumping = false;
 
@@ -48,6 +50,8 @@ public class PlayerController : MonoBehaviour
 
 		StartCoroutine (BeginningText ());
 		diplomaCount.text = "Classes Left: " + count + "/5";
+		speedupCount.text = "Speed Boost: " + sCount;
+
 	}
 
 	// Update is called once per frame
@@ -78,8 +82,12 @@ public class PlayerController : MonoBehaviour
 			if (isJumping == false) { // --------------------- Checks for double jumps ---------
 				rb.AddForce (jumpHeight, ForceMode2D.Impulse);
 				isJumping = true;
-				jump.Play();
+				jump.Play ();
 			}
+		} else if (Input.GetKeyDown (KeyCode.S)) {
+			sCount -= 1;
+			speedupCount.text = "Speed Boost: " + sCount;
+			StartCoroutine (SpeedUp ());
 		}
 	}
 
@@ -106,8 +114,10 @@ public class PlayerController : MonoBehaviour
 		// Tests for collision with Coffee tagged objects
 		else if (col.gameObject.tag == "Coffee") {
 			col.gameObject.SetActive (false);
+			sCount += 1;
+			speedupCount.text = "Speed Boost: " + sCount;
 			powerUP.Play ();
-			StartCoroutine (SpeedUp ());
+
 		}
 
 		// Tests for collision with Diploma tagged objects
