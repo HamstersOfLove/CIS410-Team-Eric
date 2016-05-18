@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
 
 
 		StartCoroutine (BeginningText ());
-		diplomaCount.text = count + "/5";
+		diplomaCount.text = "Classes Left: " + count + "/5";
 	}
 
 	// Update is called once per frame
@@ -174,7 +174,7 @@ public class PlayerController : MonoBehaviour
 	void CountText () // Sets text when player collects diploma
 	{
 		if (count > 0) {
-			diplomaCount.text = count + "/5";
+			diplomaCount.text = "Classes Left: " + count + "/5";
 		} else {
 			diplomaCount.text = "Done!";
 		}
