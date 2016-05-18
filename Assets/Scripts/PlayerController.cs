@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
 	public Text endGame;
 	public Text diplomaCount;
 	public Text speedupCount;
+	public Text pushText;
 
 	private Vector3 movingGround;
 	private Animator animator;
@@ -85,9 +86,11 @@ public class PlayerController : MonoBehaviour
 				jump.Play ();
 			}
 		} else if (Input.GetKeyDown (KeyCode.S)) {
-			sCount -= 1;
-			speedupCount.text = "Speed Boost: " + sCount;
-			StartCoroutine (SpeedUp ());
+			if (sCount > 0) {
+				sCount -= 1;
+				speedupCount.text = "Speed Boost: " + sCount;
+				StartCoroutine (SpeedUp ());
+			}
 		}
 	}
 
@@ -194,15 +197,19 @@ public class PlayerController : MonoBehaviour
 	IEnumerator BeginningText() { // Called when player achieves a speed up power up
 		if (currentLevel == "AdventuresOfEric") {
 			endGame.text = "Freshman! Freshman! Freshman!";
+			pushText.text = "Push [s] to use speed boost";
 
 		} else if (currentLevel == "Level2") {
 			endGame.text = "Sophomoressss!";
+			pushText.text = "Push [s] to use speed boost";
 
 		} else if (currentLevel == "Level3") {
 			endGame.text = "Junior Year!!!";
+			pushText.text = "Push [s] to use speed boost";
 
 		} else if (currentLevel == "Level4") {
 			endGame.text = "Seniors Babbbyyyyyy";
+			pushText.text = "Push [s] to use speed boost";
 
 		}
 		else if (currentLevel == "GraduationDay") {
@@ -210,6 +217,7 @@ public class PlayerController : MonoBehaviour
 		}
 		yield return new WaitForSeconds(3.0f);
 		endGame.text = "";
+		pushText.text = "";
 	}
 
 	IEnumerator SpeedUp() { // Called when player achieves a speed up power up
