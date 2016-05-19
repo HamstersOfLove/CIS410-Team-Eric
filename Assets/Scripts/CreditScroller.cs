@@ -24,7 +24,7 @@ public class CreditScroller : MonoBehaviour {
 	}
 
 	IEnumerator LevelTransitionWait() {
-		yield return new WaitForSeconds(10.0f);
+		yield return new WaitForSeconds(8.0f);
 		SceneManager.LoadScene(nextLevel, LoadSceneMode.Single);
 	}
 }

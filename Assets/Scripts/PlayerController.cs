@@ -105,19 +105,7 @@ public class PlayerController : MonoBehaviour
 		if (col.gameObject.tag == "Ground") {
 			isJumping = false;
 		}
-
-<<<<<<< HEAD
-		if (col.gameObject.tag == "Scroll") {
-			endGame.text = "Congrats! Eric, You've Graduated!";
-			col.gameObject.SetActive (false);
-			nextLevel = "Credits";
-			new WaitForSeconds(2.0f);
-			StartCoroutine (LevelTransitionWait ());
-			//new WaitForSeconds(2.0f);
-		}
-=======
->>>>>>> 50d1d7025c270819d6f2bbab6059b1e52bc07691
-
+			
 
 		// Tests for collision with End Game objects (level complete)
 		else if (col.gameObject.tag == "End Game") {
@@ -168,14 +156,13 @@ public class PlayerController : MonoBehaviour
 			transform.parent = null;
 		}
 	}
-		
-<<<<<<< HEAD
-=======
 	
 	void OnTriggerEnter2D(Collider2D col){
 		if (col.gameObject.tag == "Scroll") {
 			endGame.text = "Congrats! Eric, You've Graduated!";
 			col.gameObject.SetActive (false);
+			nextLevel = "Credits";
+			StartCoroutine (LevelTransitionWait ());
 		}
 
 		// Tests for collision with Enemy tagged objects
@@ -202,7 +189,7 @@ public class PlayerController : MonoBehaviour
 			CountText ();
 		}
 	}
->>>>>>> 50d1d7025c270819d6f2bbab6059b1e52bc07691
+
 	void CountText () // Sets text when player collects diploma
 	{
 		if (count > 0) {
@@ -233,15 +220,16 @@ public class PlayerController : MonoBehaviour
 		}
 		else if (currentLevel == "GraduationDay") {
 			endGame.text = "Graduation Day!!!!";
+			yield return new WaitForSeconds (5.0f);
 		}
-		yield return new WaitForSeconds(10.0f);
+		yield return new WaitForSeconds(2.0f);
 		endGame.text = "";
 		pushText.text = "";
 	}
 
 	IEnumerator SpeedUp() { // Called when player achieves a speed up power up
 		playerSpeed = 0.115f;
-		yield return new WaitForSeconds(5.0f);
+		yield return new WaitForSeconds(7.0f);
 		playerSpeed = 0.08f;
 	}
 
