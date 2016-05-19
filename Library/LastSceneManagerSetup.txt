@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/_scenes/Level5.unity
-=======
-- path: Assets/_scenes/Level3.unity
->>>>>>> 8fc61d9203beabc462790aeb6e335c2563d2219d
+- path: Assets/_scenes/GraduationDay.unity
   isLoaded: 1
   isActive: 1

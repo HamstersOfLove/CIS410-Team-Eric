@@ -94,6 +94,10 @@ public class PlayerController : MonoBehaviour
 		if (col.gameObject.tag == "Scroll") {
 			endGame.text = "Congrats! Eric, You've Graduated!";
 			col.gameObject.SetActive (false);
+			nextLevel = "Credits";
+			new WaitForSeconds(2.0f);
+			StartCoroutine (LevelTransitionWait ());
+			//new WaitForSeconds(2.0f);
 		}
 
 		// Tests for collision with Enemy tagged objects
@@ -142,6 +146,8 @@ public class PlayerController : MonoBehaviour
 					nextLevel = "GraduationDay";
 					endGame.text = "Eric! You've done it!!! You're a Wizard!";
 					StartCoroutine (LevelTransitionWait ());
+				} else if (currentLevel == "Credits") {
+					nextLevel = "LevelManager";
 				}
 			} else {
 				StartCoroutine (NotFinished ());
@@ -166,11 +172,7 @@ public class PlayerController : MonoBehaviour
 			transform.parent = null;
 		}
 	}
-
-
 		
-	
-
 	void CountText () // Sets text when player collects diploma
 	{
 		if (count > 0) {
@@ -196,9 +198,9 @@ public class PlayerController : MonoBehaviour
 
 		}
 		else if (currentLevel == "GraduationDay") {
-		endGame.text = "Graduation Day!!!!";
+			endGame.text = "Graduation Day!!!!";
 		}
-		yield return new WaitForSeconds(3.0f);
+		yield return new WaitForSeconds(10.0f);
 		endGame.text = "";
 	}
 
