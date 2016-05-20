@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
 	private Scene active;
 
 	public AudioSource[] sounds;
-	private AudioSource jump, powerUP, scrollPickUp, gameOver;
+	private AudioSource jump, powerUP, scrollPickUp, gameOver, usePowerUp;
 
 	// Use this for initialization
 	void Start()
@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour
 		powerUP = sounds [1];
 		scrollPickUp = sounds [2];
 		gameOver = sounds [3];
-
+		usePowerUp = sounds [4];
 
 		StartCoroutine (BeginningText ());
 		diplomaCount.text = "Classes Taken: " + count + "/5";
@@ -92,6 +92,7 @@ public class PlayerController : MonoBehaviour
 				if (sCount > 0) {
 					sCount -= 1;
 					speedupCount.text = "Speed Boost: " + sCount;
+					usePowerUp.Play ();
 					StartCoroutine (SpeedUp ());
 				}
 			}

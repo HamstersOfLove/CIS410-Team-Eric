@@ -49,7 +49,15 @@
      <None Include="Assets\Textures\RainMaker\Prefab\RainShader.shader" />
      <None Include="Assets\Textures\RainMaker\Readme.txt" />
  <Reference Include="Assembly-UnityScript">
+<<<<<<< HEAD
  <HintPath>/Users/Josh/Documents/CIS 410/The Adventures of Eric/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+=======
+<<<<<<< HEAD
+ <HintPath>/Users/tianhaoqian/Desktop/FinalProject/CIS410-Team-Eric/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+=======
+ <HintPath>/Users/TTaM/Documents/Classes/CS410/CIS410-Team-Eric/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+>>>>>>> 0867fe7bd74b3eb4830470e61a3b902dd4ff5107
+>>>>>>> 6ff1755515bb32dafe8a4f0863a71e5bfaef80f9
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
