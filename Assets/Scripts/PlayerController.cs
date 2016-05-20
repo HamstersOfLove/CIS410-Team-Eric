@@ -235,9 +235,14 @@ public class PlayerController : MonoBehaviour
 	}
 
 	IEnumerator LevelTransitionWait() {
-		float fadeTime = GameObject.Find ("Main Camera").GetComponent<Fading> ().BeginFade (1);
-		yield return new WaitForSeconds(fadeTime);
-		SceneManager.LoadScene(nextLevel, LoadSceneMode.Single);
+		if (currentLevel == "GraduationDay") {
+			yield return new WaitForSeconds (2.5f);
+			SceneManager.LoadScene (nextLevel, LoadSceneMode.Single);
+		} else {
+			float fadeTime = GameObject.Find ("Main Camera").GetComponent<Fading> ().BeginFade (1);
+			yield return new WaitForSeconds (fadeTime);
+			SceneManager.LoadScene (nextLevel, LoadSceneMode.Single);
+		}
 	}
 
 
