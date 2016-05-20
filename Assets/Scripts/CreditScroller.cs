@@ -19,12 +19,12 @@ public class CreditScroller : MonoBehaviour {
 	void Update () {
 		float newPosition = Mathf.Repeat (Time.time * scrollSpeed, tileSize);
 		transform.position = startPosition + Vector2.up * newPosition;
-		nextLevel = "LevelManager";
-		StartCoroutine (LevelTransitionWait ());
-	}
-
-	IEnumerator LevelTransitionWait() {
-		yield return new WaitForSeconds(8.0f);
-		SceneManager.LoadScene(nextLevel, LoadSceneMode.Single);
+		print ("transform Position: ");
+		print(transform.position.y);
+		if (transform.position.y > 7.7) {
+			print ("past 7");
+			nextLevel = "LevelManager";
+			SceneManager.LoadScene(nextLevel, LoadSceneMode.Single);
+		}
 	}
 }
