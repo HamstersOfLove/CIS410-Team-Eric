@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_scenes/Credits.unity
+- path: Assets/_scenes/Gameover.unity
   isLoaded: 1
   isActive: 1
