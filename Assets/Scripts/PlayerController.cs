@@ -110,7 +110,7 @@ public class PlayerController : MonoBehaviour
 
 		// Tests for collision with End Game objects (level complete)
 		else if (col.gameObject.tag == "End Game") {
-			if (count > 0) {
+			if (count == 5) {
 
 				if (currentLevel == "AdventuresOfEric") {
 
