@@ -19,7 +19,7 @@ public class CreditScroller : MonoBehaviour {
 	void Update () {
 		float newPosition = Mathf.Repeat (Time.time * scrollSpeed, tileSize);
 		transform.position = startPosition + Vector2.up * newPosition;
-		print (transform.position.y);
+
 		if (transform.position.y > 6.98) {
 			nextLevel = "LevelManager";
 			SceneManager.LoadScene(nextLevel, LoadSceneMode.Single);
