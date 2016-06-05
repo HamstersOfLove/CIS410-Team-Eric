@@ -53,6 +53,7 @@ public class PlayerController : MonoBehaviour
 		StartCoroutine (BeginningText ());
 		diplomaCount.text = "Classes Taken: " + count + "/5";
 		speedupCount.text = "Speed Boost: " + sCount;
+		pushText.text = "";
 
 	}
 
@@ -225,7 +226,7 @@ public class PlayerController : MonoBehaviour
 		}
 		yield return new WaitForSeconds(2.0f);
 		endGame.text = "";
-		pushText.text = "";
+	
 	}
 
 	IEnumerator SpeedUp() { // Called when player achieves a speed up power up
