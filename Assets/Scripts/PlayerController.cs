@@ -167,8 +167,7 @@ public class PlayerController : MonoBehaviour
 		}
 
 		// Tests for collision with Enemy tagged objects
-		else if (col.gameObject.tag == "Enemy") {
-			
+		else if (col.gameObject.tag == "Enemy" && !isDead) {
 			StartCoroutine (OnDeath ());
 			//animator.speed = 0;
 		}
