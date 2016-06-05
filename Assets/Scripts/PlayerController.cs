@@ -174,6 +174,7 @@ public class PlayerController : MonoBehaviour
 
 		// Tests for collision with Coffee tagged objects
 		else if (col.gameObject.tag == "Coffee") {
+			StartCoroutine (SpeedText ());
 			col.gameObject.SetActive (false);
 			sCount += 1;
 			speedupCount.text = "Speed Boost: " + sCount;
@@ -203,19 +204,19 @@ public class PlayerController : MonoBehaviour
 	IEnumerator BeginningText() { // Called when player achieves a speed up power up
 		if (currentLevel == "AdventuresOfEric") {
 			endGame.text = "Freshman! Freshman! Freshman!";
-			pushText.text = "Push [s] to use speed boost";
+
 
 		} else if (currentLevel == "Level2") {
 			endGame.text = "Sophomoressss!";
-			pushText.text = "Push [s] to use speed boost";
+
 
 		} else if (currentLevel == "Level3") {
 			endGame.text = "Junior Year!!!";
-			pushText.text = "Push [s] to use speed boost";
+
 
 		} else if (currentLevel == "Level4") {
 			endGame.text = "Seniors Babbbyyyyyy";
-			pushText.text = "Push [s] to use speed boost";
+
 
 		}
 		else if (currentLevel == "GraduationDay") {
@@ -263,5 +264,10 @@ public class PlayerController : MonoBehaviour
 		yield return new WaitForSeconds(2f);
 		endGame.text = "";
 
+	}
+	IEnumerator SpeedText() {
+		pushText.text = "Push [s] to use speed boost";
+		yield return new WaitForSeconds(2.5f);
+		pushText.text = "";
 	}
 }
